@@ -1,0 +1,94 @@
+.staff {
+  img {
+    width: 10px;
+  }
+}
+.t-center {
+  text-align: center;
+}
+
+.f_whiet {
+  color: #ecf9fc;
+}
+
+table {
+  width: 100%;
+  line-height: 1.4;
+  thead {
+    tr {
+      background-color: rgba(73, 196, 229, 0.3);
+      border-radius: 5px;
+      overflow: hidden;
+      th,
+      .th {
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td,
+      .td {
+        padding: 10px;
+        border-bottom: solid 0.3px #959596;
+      }
+      &:last-child {
+        td,
+        .td {
+          border-bottom: solid 1px #49c4e5;
+        }
+      }
+    }
+  }
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 7px 10px;
+  border: solid 0.5px #959596;
+  display: inline-block;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: $gray-500;
+  }
+
+  &[type="checkbox"] {
+    width: 20px;
+  }
+}
+
+.dataTable {
+  tr {
+    &.active {
+      background-color: #f6f6f6;
+    }
+  }
+}
+
+.index {
+  .card {
+    background-color: #ecf9fc;
+    border: none;
+  }
+}
+
+.dash-between {
+  position: relative;
+  &::after {
+    content: "-";
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.price {
+  &::before {
+    content: "NT$ ";
+  }
+}
