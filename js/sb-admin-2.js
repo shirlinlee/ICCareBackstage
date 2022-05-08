@@ -1,8 +1,10 @@
 (function ($) {
   "use strict"; // Start of use strict
 
-  // Toggle the side navigation
+  const currentPage =
+    window.location.pathname === "/" ? "/index" : window.location.pathname;
 
+  // Toggle the side navigation
   $("body").on("click", "#sidebarToggle, #sidebarToggleTop", function (e) {
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
@@ -11,11 +13,22 @@
     }
   });
 
-  $("#accordionSidebar").load("layout/sidebar.html");
+  // init layout
+  $("#accordionSidebar").load("layout/sidebar.html", function () {
+    $(".nav-item").removeClass("active");
+    $("body")
+      .find(".nav-item")
+      .each(function () {
+        var navName = $(this).attr("data-nav");
+        if (currentPage.indexOf(navName) > -1) {
+          $(this).addClass("active");
+        }
+      });
+  });
   $("#nav").load("layout/top_nav.html");
 
   // Close any open menu accordions when window is resized below 768px
-  $(window).resize(function () {
+  $(window).on("resize", function () {
     if ($(window).width() < 768) {
       $(".sidebar .collapse").collapse("hide");
     }

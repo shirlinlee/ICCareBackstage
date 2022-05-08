@@ -51,13 +51,27 @@ textarea {
   border: solid 0.5px #959596;
   display: inline-block;
   border-radius: 5px;
+  appearance: none;
 
   &::placeholder {
     color: $gray-500;
   }
 
   &[type="checkbox"] {
-    width: 20px;
+    width: 15px;
+    height: 15px;
+    &:checked {
+      background-color: #49c4e5;
+      border: solid 0.5px #49c4e5;
+      background-image: url(../img/ico-check.png);
+      background-size: 9px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &:focus-visible {
+    outline: none;
+    border: solid 0.5px #49c4e5;
   }
 }
 
@@ -67,6 +81,13 @@ textarea {
       background-color: #f6f6f6;
     }
   }
+}
+
+select {
+  background-position: right 10px center;
+  background-image: url(../img/ico-arrow-02.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
 }
 
 .index {
@@ -91,4 +112,9 @@ textarea {
   &::before {
     content: "NT$ ";
   }
+}
+
+.fa {
+  top: 15px;
+  right: 30px;
 }
