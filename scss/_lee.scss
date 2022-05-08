@@ -60,6 +60,8 @@ textarea {
   &[type="checkbox"] {
     width: 15px;
     height: 15px;
+    vertical-align: middle;
+    margin-bottom: 4px;
     &:checked {
       background-color: #49c4e5;
       border: solid 0.5px #49c4e5;
