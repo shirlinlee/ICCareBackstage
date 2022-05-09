@@ -1,1 +1,3 @@
 node_modules
+vendor/bootstrap/css
+vendor/fontawesome-free/css
