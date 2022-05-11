@@ -90,6 +90,11 @@ select {
   background-image: url(../img/ico-arrow-02.png);
   background-size: 10px;
   background-repeat: no-repeat;
+  &:disabled {
+    opacity: 1;
+    background-color: #fafafa;
+    color: #555;
+  }
 }
 
 .index {

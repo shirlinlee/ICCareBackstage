@@ -85,7 +85,7 @@
                     name=""
                     id=""
                     cols="30"
-                    rows="10"
+                    rows="5"
                     class="mt-2"
                   ></textarea>
                 </div>
@@ -106,7 +106,6 @@
 
             <section>
               <p class="h5 mb-3">訂購商品資訊</p>
-
               <div class="row my-2">
                 <div class="col-12 mb-3">
                   <table class="dataTable">
@@ -156,6 +155,138 @@
             <!-- 收件人資料* -->
 
             <section>
+              <p class="h5 mb-3">訂購人資訊</p>
+              <div class="row mb-4">
+                <div class="col-4">
+                  名*
+                  <input type="text" value="聰明" class="mt-2" disabled />
+                </div>
+                <div class="col-4 pl-0">
+                  姓*
+                  <input type="text" value="陳" class="mt-2" disabled />
+                </div>
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  Email*
+                  <input
+                    type="email"
+                    value="abc123@gmail.com"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+                <div class="col-4 pl-0">
+                  電話號碼*
+                  <input
+                    type="number"
+                    value="0912345678"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  出生年月日*
+                  <input
+                    type="birthday"
+                    value="1992/01/01"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  國家
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="台灣" selected="selected">台灣</option>
+                  </select>
+                </div>
+                <div class="col-4 pl-0">
+                  城市
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="台北市" selected="selected">台北市</option>
+                  </select>
+                </div>
+                <div class="col-4 pl-0">
+                  州 / 省份
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="大安區" selected="selected">大安區</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-8">
+                  街道地址
+                  <input
+                    type="text"
+                    value="XXXXXXXXXXX"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+                <div class="col-4 pl-0">
+                  郵遞區號
+                  <input type="number" value="106" class="mt-2" disabled />
+                </div>
+              </div>
+
+              <p class="h5 mb-3 mt-5">發票資訊</p>
+              <div class="row mb-3">
+                <div class="col-3 py-2">
+                  <input
+                    type="checkbox"
+                    name=""
+                    class=""
+                    id="personal"
+                    disabled
+                  />
+                  <label for="personal">個人電子發票</label>
+                </div>
+
+                <div class="col-3 py-2 pl-0">
+                  <input
+                    type="checkbox"
+                    name=""
+                    class=""
+                    id="company"
+                    disabled
+                    checked="checked"
+                  />
+                  <label for="company">公司戶電子發票</label>
+                </div>
+                <div class="col-3 pl-0">
+                  <input
+                    type="text"
+                    placeholder="公司抬頭*"
+                    disabled
+                    value="XX公司"
+                  />
+                </div>
+                <div class="col-3 pl-0">
+                  <input
+                    type="tel"
+                    placeholder="統一編號*"
+                    disabled
+                    value="12345678"
+                  />
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <hr class="sidebar-divider mb-5 mt-5" />
+
               <p class="h5 mb-3">收件人資訊</p>
               <div class="row mb-4">
                 <div class="col-4">
@@ -204,7 +335,7 @@
                 </div>
               </div>
 
-              <div class="row mb-4">
+              <div class="row mb-5">
                 <div class="col-8">
                   街道地址
                   <input
@@ -217,111 +348,6 @@
                 <div class="col-4 pl-0">
                   郵遞區號
                   <input type="number" value="106" class="mt-2" disabled />
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-2 py-2 pr-0">送貨方式</div>
-                <div class="col-6">
-                  <select name="" id="">
-                    <option value="線上開通+郵件寄送">線上開通+郵件寄送</option>
-                    <option value="郵件寄送">郵件寄送</option>
-                  </select>
-                </div>
-                <div class="col-4"></div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-2 py-2 pr-0">收件人姓名</div>
-                <div class="col-4">
-                  <input type="text" name="" />
-                </div>
-                <div class="col-6 pl-0"></div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-2 py-2 pr-0">收件人電話</div>
-                <div class="col-4">
-                  <select name="" id="">
-                    <option value="886">886</option>
-                  </select>
-                </div>
-                <div class="col-6 pl-0">
-                  <input type="tel" name="" />
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-2 py-2 pr-0">收件人地址</div>
-                <div class="col-4">
-                  <select name="" id="">
-                    <option value="國家">國家</option>
-                  </select>
-                </div>
-                <div class="col-4 pl-0">
-                  <select name="" id="">
-                    <option value="城市">城市</option>
-                  </select>
-                </div>
-                <div class="col-2"></div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-2 py-2 pr-0"></div>
-                <div class="col-10">
-                  <input type="text" placeholder="地址" />
-                </div>
-              </div>
-
-              <p class="h5 my-3">發票資訊 *</p>
-
-              <div class="row mb-3">
-                <div class="col-3 py-2">
-                  <input type="checkbox" name="" class="" id="personal" />
-                  <label for="personal">個人電子發票</label>
-                </div>
-
-                <div class="col-3 py-2 pl-0">
-                  <input type="checkbox" name="" class="" id="company" />
-                  <label for="company">公司戶電子發票</label>
-                </div>
-                <div class="col-3 pl-0">
-                  <input type="text" placeholder="公司抬頭*" />
-                </div>
-                <div class="col-3 pl-0">
-                  <input type="tel" placeholder="統一編號*" />
-                </div>
-              </div>
-
-              <p class="h5 my-3">健保卡號</p>
-
-              <div class="row mb-5">
-                <div class="col-4 dash-between">
-                  <input
-                    type="tel"
-                    maxlength="4"
-                    name="card"
-                    class="t-center"
-                    id="number1"
-                  />
-                </div>
-
-                <div class="col-4 dash-between pl-0">
-                  <input
-                    type="tel"
-                    maxlength="4"
-                    name="card"
-                    class="t-center"
-                    id="number2"
-                  />
-                </div>
-                <div class="col-4 pl-0">
-                  <input
-                    type="tel"
-                    maxlength="4"
-                    name="card"
-                    class="t-center"
-                    id="number3"
-                  />
                 </div>
               </div>
             </section>
