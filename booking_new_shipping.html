@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid booking">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-booking.png" />訂單管理 > 新增訂單
+            </h1>
+            <!-- 選取會員 -->
+
+            <section>
+              <p class="h5 mb-3">送貨及訂單狀態</p>
+              <div class="row text-m">
+                <div class="col-4">
+                  送貨狀態
+                  <select name="" id="" class="mt-2">
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  訂單狀態
+                  <select name="" id="" class="mt-2">
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="col-4"></div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  訂單備註<textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    class="mt-2"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-4"></div>
+                <div class="col-4">
+                  <a href="#" class="btn btn-primary btn-block">儲存</a>
+                </div>
+                <div class="col-4"></div>
+              </div>
+            </section>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-5" />
+
+            <!-- 選取商品 -->
+
+            <section>
+              <p class="h5 mb-3">訂購商品資訊</p>
+
+              <div class="row my-2">
+                <div class="col-12 mb-3">
+                  <table class="dataTable">
+                    <thead>
+                      <tr class="text-center">
+                        <th width="180">商品</th>
+                        <th width="180">贈品選擇</th>
+                        <th width="60">數量</th>
+                        <th>備註</th>
+                        <th width="120">金額</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center">
+                        <td>星辰額耳溫槍</td>
+                        <td>
+                          <select name="" id="">
+                            <option value="規格選擇">規格選擇</option>
+                          </select>
+                        </td>
+                        <td>1</td>
+                        <td></td>
+                        <td>NT$2700</td>
+                      </tr>
+                      <tr
+                        class="text-center"
+                        style="background-color: #eceded; line-height: 35px"
+                      >
+                        <td>本島運費</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td>NT$150</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-12 pr-4 text-right">
+                  訂單金額 NT <font class="h4 pr-2">$2850</font>
+                </div>
+              </div>
+            </section>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider mb-5 mt-5" />
+
+            <!-- 收件人資料* -->
+
+            <section>
+              <p class="h5 mb-3">收件人資訊</p>
+              <div class="row mb-4">
+                <div class="col-4">
+                  名*
+                  <input type="text" value="聰明" class="mt-2" disabled />
+                </div>
+                <div class="col-4 pl-0">
+                  姓*
+                  <input type="text" value="陳" class="mt-2" disabled />
+                </div>
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  電話號碼*
+                  <input
+                    type="number"
+                    value="0912345678"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  國家
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="台灣" selected="selected">台灣</option>
+                  </select>
+                </div>
+                <div class="col-4 pl-0">
+                  城市
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="台北市" selected="selected">台北市</option>
+                  </select>
+                </div>
+                <div class="col-4 pl-0">
+                  州 / 省份
+                  <select name="" id="" disabled class="mt-2">
+                    <option value="大安區" selected="selected">大安區</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-8">
+                  街道地址
+                  <input
+                    type="text"
+                    value="XXXXXXXXXXX"
+                    class="mt-2"
+                    disabled
+                  />
+                </div>
+                <div class="col-4 pl-0">
+                  郵遞區號
+                  <input type="number" value="106" class="mt-2" disabled />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-2 py-2 pr-0">送貨方式</div>
+                <div class="col-6">
+                  <select name="" id="">
+                    <option value="線上開通+郵件寄送">線上開通+郵件寄送</option>
+                    <option value="郵件寄送">郵件寄送</option>
+                  </select>
+                </div>
+                <div class="col-4"></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-2 py-2 pr-0">收件人姓名</div>
+                <div class="col-4">
+                  <input type="text" name="" />
+                </div>
+                <div class="col-6 pl-0"></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-2 py-2 pr-0">收件人電話</div>
+                <div class="col-4">
+                  <select name="" id="">
+                    <option value="886">886</option>
+                  </select>
+                </div>
+                <div class="col-6 pl-0">
+                  <input type="tel" name="" />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-2 py-2 pr-0">收件人地址</div>
+                <div class="col-4">
+                  <select name="" id="">
+                    <option value="國家">國家</option>
+                  </select>
+                </div>
+                <div class="col-4 pl-0">
+                  <select name="" id="">
+                    <option value="城市">城市</option>
+                  </select>
+                </div>
+                <div class="col-2"></div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-2 py-2 pr-0"></div>
+                <div class="col-10">
+                  <input type="text" placeholder="地址" />
+                </div>
+              </div>
+
+              <p class="h5 my-3">發票資訊 *</p>
+
+              <div class="row mb-3">
+                <div class="col-3 py-2">
+                  <input type="checkbox" name="" class="" id="personal" />
+                  <label for="personal">個人電子發票</label>
+                </div>
+
+                <div class="col-3 py-2 pl-0">
+                  <input type="checkbox" name="" class="" id="company" />
+                  <label for="company">公司戶電子發票</label>
+                </div>
+                <div class="col-3 pl-0">
+                  <input type="text" placeholder="公司抬頭*" />
+                </div>
+                <div class="col-3 pl-0">
+                  <input type="tel" placeholder="統一編號*" />
+                </div>
+              </div>
+
+              <p class="h5 my-3">健保卡號</p>
+
+              <div class="row mb-5">
+                <div class="col-4 dash-between">
+                  <input
+                    type="tel"
+                    maxlength="4"
+                    name="card"
+                    class="t-center"
+                    id="number1"
+                  />
+                </div>
+
+                <div class="col-4 dash-between pl-0">
+                  <input
+                    type="tel"
+                    maxlength="4"
+                    name="card"
+                    class="t-center"
+                    id="number2"
+                  />
+                </div>
+                <div class="col-4 pl-0">
+                  <input
+                    type="tel"
+                    maxlength="4"
+                    name="card"
+                    class="t-center"
+                    id="number3"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
+
+<script>
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: false,
+      searching: false,
+      info: false,
+    });
+  });
+</script>
