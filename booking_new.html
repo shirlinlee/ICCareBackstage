@@ -57,7 +57,9 @@
           <div class="container-fluid booking">
             <!-- Page Heading -->
 
-            <h1 class="h3 mb-4 text-primary">訂單管理 > 新增訂單</h1>
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-booking.png" />訂單管理 > 新增訂單
+            </h1>
             <div class="row">
               <div class="col-8">
                 <!-- 選取會員 -->
@@ -141,72 +143,136 @@
 
                 <section>
                   <p class="h5 mb-3">選取商品</p>
-                  <div class="row">
-                    <div class="col-8">
-                      <input
-                        type="text"
-                        class="search text-m"
-                        placeholder="輸入商品名稱進行搜尋"
-                      />
+                  <div class="content content1">
+                    <div class="row">
+                      <div class="col-8">
+                        <input
+                          type="text"
+                          class="search text-m"
+                          placeholder="輸入商品名稱進行搜尋"
+                        />
+                      </div>
+                      <div class="col-4"></div>
                     </div>
-                    <div class="col-4"></div>
-                  </div>
-                  <div class="row my-2">
-                    <div class="col-12 mb-3">
-                      <table class="dataTable">
-                        <thead>
-                          <tr>
-                            <th class="text-center" width="20">
-                              <input
-                                type="checkbox"
-                                name=""
-                                id="all"
-                                class="all"
-                              />
-                            </th>
-                            <th></th>
-                            <th class="text-left" width="70%">商品名稱</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center">
-                              <input type="checkbox" name="" class="single" />
-                            </td>
-                            <td class="text-center"></td>
-                            <td>單次看診</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">
-                              <input type="checkbox" name="" class="single" />
-                            </td>
-                            <td class="text-center">
-                              <img src="img/u-10.png" height="70" alt="" />
-                            </td>
-                            <td>旺北脈搏血氧濃度計</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">
-                              <input type="checkbox" name="" class="single" />
-                            </td>
-                            <td class="text-center">
-                              <img src="img/u-14.png" height="70" alt="" />
-                            </td>
-                            <td>百捷益自動退片多功能檢驗系統組合</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="row my-2">
+                      <div class="col-12 mb-3">
+                        <table class="dataTable">
+                          <thead>
+                            <tr>
+                              <th class="text-center" width="20">
+                                <input
+                                  type="checkbox"
+                                  name=""
+                                  id="all"
+                                  class="all"
+                                />
+                              </th>
+                              <th></th>
+                              <th class="text-left" width="70%">商品名稱</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <input type="checkbox" name="" class="single" />
+                              </td>
+                              <td class="text-center"></td>
+                              <td>單次看診</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input type="checkbox" name="" class="single" />
+                              </td>
+                              <td class="text-center">
+                                <img src="img/u-10.png" height="70" alt="" />
+                              </td>
+                              <td>旺北脈搏血氧濃度計</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input type="checkbox" name="" class="single" />
+                              </td>
+                              <td class="text-center">
+                                <img src="img/u-14.png" height="70" alt="" />
+                              </td>
+                              <td>百捷益自動退片多功能檢驗系統組合</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                      <button type="submit" class="btn btn-primary btn-block">
-                        下一步
-                      </button>
+                    <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4">
+                        <button
+                          class="btn btn-primary btn-block"
+                          data-btn="content2"
+                        >
+                          下一步
+                        </button>
+                      </div>
+                      <div class="col-4"></div>
                     </div>
-                    <div class="col-4"></div>
+                  </div>
+                  <div class="content content2" style="display: none">
+                    <div class="row my-2">
+                      <div class="col-12 mb-3">
+                        <table class="dataTable">
+                          <thead>
+                            <tr class="text-center">
+                              <th width="180">商品</th>
+                              <th width="120">規格選擇</th>
+                              <th width="60">數量</th>
+                              <th>金額</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-center">
+                              <td>星辰額耳溫槍</td>
+                              <td>
+                                <select name="" id="">
+                                  <option value="規格選擇">規格選擇</option>
+                                </select>
+                              </td>
+                              <td>1</td>
+                              <td>NT$2700</td>
+                            </tr>
+                            <tr class="text-center">
+                              <td>IC Care VIP</td>
+                              <td>
+                                <select name="" id="">
+                                  <option value=""></option>
+                                </select>
+                              </td>
+                              <td>1</td>
+                              <td>NT$2700</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12 pr-4 mb-4 text-right">
+                        小計 NT <font class="h4 pr-2">$5400</font>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-4">
+                        <button
+                          class="btn btn-primary-border btn-back btn-block"
+                          data-btn="content1"
+                        >
+                          重新選購
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">
+                          下一步
+                        </button>
+                      </div>
+                      <div class="col-2"></div>
+                    </div>
                   </div>
                 </section>
 
@@ -371,9 +437,12 @@
                   <div class="row mt-3">
                     <div class="col-2"></div>
                     <div class="col-8">
-                      <button type="submit" class="btn btn-primary btn-block">
+                      <a
+                        href="booking_new_shipping.html"
+                        class="btn btn-primary btn-block"
+                      >
                         確認新增
-                      </button>
+                      </a>
                     </div>
                     <div class="col-2"></div>
                   </div>
@@ -456,6 +525,14 @@
       paging: false,
       searching: false,
       info: false,
+    });
+
+    $(".content").on("click", "button", function () {
+      const el = $(this).attr("data-btn");
+      if (el) {
+        $(".content").hide();
+        $(`.${el}`).show();
+      }
     });
   });
 </script>

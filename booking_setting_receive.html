@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>SB Admin 2 - 商品設定</title>
+    <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link
@@ -58,84 +58,66 @@
             <!-- Page Heading -->
 
             <h1 class="h3 mb-4 text-primary">
-              <img src="img/ico-product-b.png" />商品設定
+              <img src="img/ico-booking.png" />訂單管理
             </h1>
             <div class="row">
               <div class="col-12">
-                <!-- 頁籤 -->
                 <div class="row">
-                  <div class="col-12">
-                    <div
-                      class="col-12 d-flex justify-content-start mb-4 pl-0 tab"
+                  <div class="col-12 d-flex justify-content-start mb-4 tab">
+                    <a
+                      class="text-gray-800 mr-3 pb-3"
+                      href="booking_setting.html"
+                      >全部訂單</a
                     >
-                      <a
-                        class="text-gray-800 mr-3 pb-3"
-                        target="_self"
-                        href="product_setting.html"
-                        >所有商品</a
-                      >
-                      <a
-                        class="text-gray-800 mr-3 pb-3 ml-3 active"
-                        target="_self"
-                        href="product_setting_launched.html"
-                        >已上架</a
-                      >
-                      <a
-                        class="text-gray-800 mr-3 pb-3 ml-3"
-                        target="_self"
-                        href="product_setting_discontinued.html"
-                        >已下架</a
-                      >
-                      <a
-                        class="text-gray-800 mr-3 pb-3 ml-3"
-                        target="_self"
-                        href="product_setting_understock.html"
-                        >庫存不足</a
-                      >
-                    </div>
+                    <a
+                      class="text-gray-800 mr-3 ml-3 pb-3"
+                      href="booking_setting_stocking.html"
+                      >備貨中</a
+                    >
+                    <a
+                      class="text-gray-800 mr-3 ml-3 pb-3"
+                      active
+                      href="booking_setting_shipped.html"
+                      >已出貨</a
+                    >
+                    <a
+                      class="text-gray-800 mr-3 ml-3 pb-3 active"
+                      href="booking_setting_receive.html"
+                      >已完成</a
+                    >
                   </div>
                 </div>
-                <!-- 篩選 -->
                 <div class="row mb-3">
-                  <div class="col-6 d-flex pl-0">
-                    <div class="col-8">
-                      <input
-                        type="text"
-                        class="search text-m"
-                        placeholder="訂單搜尋(訂單編號、訂購人、手機號碼)"
-                      />
-                    </div>
-                    <div class="col-4 pl-0">
-                      <a
-                        href="product_mall.html"
-                        class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon"
-                      >
-                        <img src="img/ico-add.png" />
-                        <span class="text">新增商品</span>
-                      </a>
-                    </div>
+                  <div class="col-2 pr-0">
+                    <select name="" id="" class="text-m">
+                      <option value="搜尋關鍵字">搜尋關鍵字</option>
+                      <option value="搜尋XX">搜尋XX</option>
+                    </select>
                   </div>
-                  <div class="col-6 d-flex">
-                    <div class="col-3 py-2 pr-0">庫存警示數量</div>
-                    <div class="col-3 pl-0">
-                      <input
-                        type="number"
-                        class="search text-m"
-                        placeholder="20"
-                      />
-                    </div>
-                    <div class="col-3 pl-0">
-                      <a
-                        href="#"
-                        class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-text"
-                      >
-                        <span class="text">儲存</span>
-                      </a>
-                    </div>
-                    <div class="col-3"></div>
+                  <div class="col-5">
+                    <input
+                      type="text"
+                      class="search text-m"
+                      placeholder="訂單搜尋(訂單編號、訂購人、手機號碼)"
+                    />
+                  </div>
+                  <div class="col-5 pl-0">
+                    <a
+                      href="booking_new.html"
+                      class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
+                    >
+                      <img src="img/ico-add.png" />
+                      <span class="text">新增訂單</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-primary pl-3 pr-3 btn-primary-icon"
+                    >
+                      <img src="img/ico-export.png" />
+                      <span class="text">匯出訂單</span>
+                    </a>
                   </div>
                 </div>
-                <!-- 表格 -->
                 <div class="row">
                   <div class="col-12 mb-3">
                     <table class="dataTable no-footer">
@@ -143,11 +125,16 @@
                         <tr>
                           <th
                             class="text-center"
-                            width="80"
+                            width="40"
                             rowspan="1"
                             colspan="1"
                           >
-                            商品類別
+                            <input
+                              type="checkbox"
+                              name=""
+                              id="all"
+                              class="all"
+                            />
                           </th>
                           <th
                             class="text-center"
@@ -155,10 +142,10 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            商品編號
+                            訂單編號
                           </th>
                           <th class="text-center" rowspan="1" colspan="1">
-                            商品名稱
+                            訂單日期
                           </th>
                           <th
                             class="text-center"
@@ -166,7 +153,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            市價
+                            訂購人
                           </th>
                           <th
                             class="text-center"
@@ -174,7 +161,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            優惠價
+                            送貨狀態
                           </th>
                           <th
                             class="text-center"
@@ -182,7 +169,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            庫存數量
+                            付款狀態
                           </th>
                           <th
                             class="text-center"
@@ -190,26 +177,26 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            商品狀態
+                            訂單金額
                           </th>
                           <th
                             class="text-center"
-                            width="160"
+                            width="100"
                             rowspan="1"
                             colspan="1"
                           >
-                            動作
+                            編輯 / 刪除
                           </th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="status-understock">
+                        <tr>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            會員方案
+                            <input type="checkbox" name="" class="single" />
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -223,35 +210,35 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            單次購買
+                            2022/5/25 14:30
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            2500
+                            陳聰明
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            1800
+                            已完成
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            19
+                            已付款
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            已上架
+                            NT$2,700
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -259,8 +246,7 @@
                             colspan="1"
                           >
                             <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                              <a class="btn-table pl-3 pr-3 py-1">編輯</a>
                             </div>
                           </td>
                         </tr>
@@ -270,7 +256,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            會員方案
+                            <input type="checkbox" name="" class="single" />
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -284,35 +270,35 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            IC CARE VIP
+                            2022/5/25 14:30
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            5400
+                            陳聰明
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            2700
+                            已完成
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            無限
+                            已付款
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            已上架
+                            NT$2,700
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -320,8 +306,7 @@
                             colspan="1"
                           >
                             <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                              <a class="btn-table pl-3 pr-3 py-1">編輯</a>
                             </div>
                           </td>
                         </tr>
@@ -331,7 +316,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            防疫專區
+                            <input type="checkbox" name="" class="single" />
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -345,35 +330,35 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            旺北脈搏血氧濃度計
+                            2022/5/25 14:30
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            3500
+                            陳聰明
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            2700
+                            已完成
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            999
+                            已付款
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            已上架
+                            NT$2,700
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -381,8 +366,7 @@
                             colspan="1"
                           >
                             <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                              <a class="btn-table pl-3 pr-3 py-1">編輯</a>
                             </div>
                           </td>
                         </tr>
@@ -392,7 +376,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            三高專區
+                            <input type="checkbox" name="" class="single" />
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -406,35 +390,35 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            百捷益自動退片多功能檢驗系統組合
+                            2022/5/25 14:30
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            3500
+                            陳聰明
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            2700
+                            已完成
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            999
+                            已付款
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            已上架
+                            NT$2,700
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -442,8 +426,7 @@
                             colspan="1"
                           >
                             <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                              <a class="btn-table pl-3 pr-3 py-1">編輯</a>
                             </div>
                           </td>
                         </tr>
@@ -453,7 +436,7 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            三高專區
+                            <input type="checkbox" name="" class="single" />
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -467,96 +450,35 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            星辰電子血壓計 CHUC515 (手臂式)
+                            2022/5/25 14:30
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            3500
+                            陳聰明
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            2700
+                            已完成
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            999
+                            已付款
                           </td>
                           <td
                             class="text-center text-gray-800"
                             rowspan="1"
                             colspan="1"
                           >
-                            已上架
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            三高專區
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            2022042200001
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            星辰額耳溫槍
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            3500
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            2700
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            999
-                          </td>
-                          <td
-                            class="text-center text-gray-800"
-                            rowspan="1"
-                            colspan="1"
-                          >
-                            已上架
+                            NT$2,700
                           </td>
                           <td
                             class="text-center text-gray-800"
@@ -564,8 +486,7 @@
                             colspan="1"
                           >
                             <div class="d-flex justify-content-center">
-                              <a class="btn-table pl-3 pr-3 py-1 mr-3">編輯</a>
-                              <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                              <a class="btn-table pl-3 pr-3 py-1">編輯</a>
                             </div>
                           </td>
                         </tr>
@@ -577,71 +498,73 @@
             </div>
           </div>
           <!-- /.container-fluid -->
+          <!-- End of Main Content -->
         </div>
-        <!-- End of Main Content -->
+        <!-- End of Content Wrapper -->
       </div>
-      <!-- End of Content Wrapper -->
-    </div>
-    <!-- End of Page Wrapper -->
+      <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
 
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+      <!-- Logout Modal-->
+      <div
+        class="modal fade"
+        id="logoutModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Ready to Leave?
+              </h5>
+              <button
+                class="close"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Select "Logout" below if you are ready to end your current
+              session.
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
   </body>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 </html>
 
 <script>
