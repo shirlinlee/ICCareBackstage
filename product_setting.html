@@ -107,11 +107,11 @@
                     </div>
                     <div class="col-4 pl-0">
                       <a
-                        href="#"
+                        href="product_mall.html"
                         class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon"
                       >
                         <img src="img/ico-add.png" />
-                        <span class="text">新增訂單</span>
+                        <span class="text">新增商品</span>
                       </a>
                     </div>
                   </div>
@@ -573,104 +573,6 @@
                     </table>
                   </div>
                 </div>
-<<<<<<< HEAD
-                <!-- <div class="row">
-                  <div
-                    class="dataTables_paginate paging_simple_numbers"
-                    id="dataTable_paginate"
-                  >
-                    <ul class="pagination">
-                      <li
-                        class="paginate_button page-item previous disabled"
-                        id="dataTable_previous"
-                      >
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="0"
-                          tabindex="0"
-                          class="page-link"
-                          >Previous</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item active">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="1"
-                          tabindex="0"
-                          class="page-link"
-                          >1</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="2"
-                          tabindex="0"
-                          class="page-link"
-                          >2</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="3"
-                          tabindex="0"
-                          class="page-link"
-                          >3</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="4"
-                          tabindex="0"
-                          class="page-link"
-                          >4</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="5"
-                          tabindex="0"
-                          class="page-link"
-                          >5</a
-                        >
-                      </li>
-                      <li class="paginate_button page-item">
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="6"
-                          tabindex="0"
-                          class="page-link"
-                          >6</a
-                        >
-                      </li>
-                      <li
-                        class="paginate_button page-item next"
-                        id="dataTable_next"
-                      >
-                        <a
-                          href="#"
-                          aria-controls="dataTable"
-                          data-dt-idx="7"
-                          tabindex="0"
-                          class="page-link"
-                          >Next</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div> -->
-=======
->>>>>>> dev/Erin
               </div>
             </div>
           </div>
@@ -743,7 +645,6 @@
 </html>
 
 <script>
-  //隱藏 Table 排序icon
   $(function () {
     $(".dataTable").DataTable({
       ordering: false,
@@ -753,6 +654,12 @@
       select: false,
       bLengthChange: false,
       dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
     });
   });
 </script>

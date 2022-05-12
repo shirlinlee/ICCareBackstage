@@ -77,9 +77,9 @@
                   <div class="col-6">
                     <div class="card py-4 pl-3 pr-3 mb-5 card-gray">
                       <p class="h5 mb-3">商品類型 *</p>
-                      <select name="" id="">
-                        <option value="線上服務">線上服務</option>
-                        <option value="周邊商城">周邊商城</option>
+                      <select name="" id="pro_type">
+                        <option value="product_online">線上服務</option>
+                        <option value="product_mall">周邊商城</option>
                       </select>
                     </div>
                   </div>
@@ -415,13 +415,10 @@
 </html>
 
 <script>
-  //隱藏 Table 排序icon
   $(function () {
-    $(".dataTable").DataTable({
-      ordering: false,
-      paging: false,
-      searching: false,
-      info: false,
+    $("#pro_type").on("change", function (e) {
+      var pageName = e.target.value;
+      window.location.href = `${pageName}.html`;
     });
   });
 </script>

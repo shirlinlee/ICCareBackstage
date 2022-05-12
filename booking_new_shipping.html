@@ -424,9 +424,18 @@
   $(function () {
     $(".dataTable").DataTable({
       ordering: false,
-      paging: false,
+      paging: true,
       searching: false,
       info: false,
+      select: false,
+      bLengthChange: false,
+      dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
     });
   });
 </script>
