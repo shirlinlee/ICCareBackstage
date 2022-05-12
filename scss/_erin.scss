@@ -1,3 +1,5 @@
+$gary-input: #959596;
+
 //--------------------------------------------------------------------標題區
 //帶有icon的頁面標題
 h1 {
@@ -74,7 +76,7 @@ h1 {
 .btn-upload-pic {
   background: $white;
   color: $gray-800;
-  border: 0.5px solid #959596;
+  border: 0.5px solid $gary-input;
   border-radius: 5px;
 }
 
@@ -97,6 +99,7 @@ h1 {
   }
 }
 
+//返回按鈕
 .btn-back {
   &::before {
     content: "";
@@ -108,6 +111,42 @@ h1 {
     background-repeat: no-repeat;
     background-size: 8px;
     vertical-align: top;
+  }
+}
+
+//表格內移除「x」按鈕
+.btn-remove {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+}
+
+//灰色按鈕
+.btn-gray-add {
+  padding: 8px 10px;
+  text-align: left;
+  color: $gray-600;
+  background: $gray-200;
+  border: 0.5px dashed $gary-input;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    color: $gray-600;
+    text-decoration: none !important;
+  }
+  img {
+    display: inline-block;
+    width: 16px;
+    margin-top: -3px;
+    margin-left: 5px;
   }
 }
 
@@ -154,9 +193,9 @@ h1 {
       }
       &.active {
         border-top: 2px solid $blue;
-        border-left: 0.5px solid #959596;
+        border-left: 0.5px solid $gary-input;
         border-bottom: 0.5px solid $white;
-        border-right: 0.5px solid #959596;
+        border-right: 0.5px solid $gary-input;
         padding-top: 8px;
         a {
           color: $black !important;
@@ -165,7 +204,7 @@ h1 {
     }
   }
   .textarea-tab-description {
-    border: 0.5px solid #959596;
+    border: 0.5px solid $gary-input;
     margin-top: -0.5px;
     height: 290px;
     border-radius: 0 0 5px 5px;
@@ -248,19 +287,26 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-//--------------------------------------------------------------------其他樣式
-
-//卡片灰色背景
-.card-gray {
-  background: $gray-200;
-  border: none;
-}
-
-//表格顯示數量低於庫存的狀態樣式
+//--------------------------------------------------------------------表格樣式
 tr {
+  td {
+    box-sizing: border-box !important;
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  //表格顯示數量低於庫存的狀態樣式
   &.status-understock {
     td {
       background: #ffeff2;
     }
   }
+}
+
+//--------------------------------------------------------------------其他樣式
+//卡片灰色背景
+.card-gray {
+  background: $gray-200;
+  border: none;
 }
