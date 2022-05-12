@@ -310,3 +310,9 @@ tr {
   background: $gray-200;
   border: none;
 }
+
+.align-time {
+  span {
+    display: inline-block;
+  }
+}
