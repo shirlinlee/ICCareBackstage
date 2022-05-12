@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 商品設定 > 新增商品</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-product-b.png" />商品設定 &gt; 新增商品
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="col-12 d-flex justify-content-start mb-4 pl-0 tab"
+                    >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 active"
+                        href="product_mall.html"
+                        >商品資訊</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        href="product_price.html"
+                        >價格數量</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        href="product_other.html"
+                        >其他設定</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card py-4 pl-3 pr-3 mb-5 card-gray">
+                      <p class="h5 mb-3">商品類型 *</p>
+                      <select name="" id="">
+                        <option value="周邊商城">周邊商城</option>
+                        <option value="線上服務">線上服務</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <section>
+                  <!-- 商品類別 -->
+                  <p class="h5 mb-3">商品類別 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <select name="" id="">
+                        <option value="主分類">主分類</option>
+                      </select>
+                    </div>
+                    <div class="col-6 pl-0">
+                      <select name="" id="">
+                        <option value="子分類">子分類</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 商品名稱 -->
+                  <p class="h5 mb-3">商品名稱 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="中文名稱" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input type="text" name="" placeholder="英文名稱" />
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 商品副標 -->
+                  <p class="h5 mb-3">商品副標</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="中文名稱" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input type="text" name="" placeholder="英文名稱" />
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 商品備註 -->
+                  <p class="h5 mb-3">商品備註</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <textarea
+                        placeholder="中文備註"
+                        class="textarea-form"
+                      ></textarea>
+                    </div>
+                    <div class="col-6 pl-0">
+                      <textarea
+                        placeholder="英文備註"
+                        class="textarea-form"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 商品圖片 -->
+                  <p class="h5 mb-3">商品圖片</p>
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <div class="btn-upload-pic">
+                        <div class="col-12 px-3c py-5">
+                          <div class="text-center mb-3">
+                            可上載JPG檔案格式的圖片，建議使用750 x 750像素的圖片
+                          </div>
+                          <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                              <div class="btn btn-primary btn-block">
+                                新增圖片
+                              </div>
+                            </div>
+                            <div class="col-4"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 商品描述 -->
+                  <p class="h5 mb-3">商品描述</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="textarea-tab">
+                        <ul class="d-flex">
+                          <li class="active"><a>商品介紹</a></li>
+                          <li><a>規格說明</a></li>
+                          <li><a>售後服務</a></li>
+                        </ul>
+                        <div class="textarea-tab-description"></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="textarea-tab">
+                        <ul class="d-flex">
+                          <li><a>Description</a></li>
+                          <li class="active"><a>Specifications</a></li>
+                          <li><a>After Service</a></li>
+                        </ul>
+                        <div class="textarea-tab-description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 是否顯示於周邊商品 -->
+                  <div class="row">
+                    <div class="col-12 d-flex">
+                      <p class="h5 py-1 my-0 mr-2">是否顯示於周邊商品</p>
+                      <label class="switch my-0">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <div class="row mb-5">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                      <button
+                        type="submit"
+                        class="btn btn-primary-border btn-back btn-block"
+                      >
+                        取消
+                      </button>
+                    </div>
+                    <div class="col-3">
+                      <button type="submit" class="btn btn-primary btn-block">
+                        確認送出
+                      </button>
+                    </div>
+                    <div class="col-3"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: false,
+      searching: false,
+      info: false,
+    });
+  });
+</script>
