@@ -36,6 +36,15 @@ h1 {
 }
 
 //--------------------------------------------------------------------按鈕區
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+}
+
 //帶有icon的按鈕
 .btn-primary-icon {
   &::after {
