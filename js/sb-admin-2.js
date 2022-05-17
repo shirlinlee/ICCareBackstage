@@ -99,7 +99,8 @@
           .find('input[type="checkbox"]')
           .prop("checked", false);
       }
-    } else {
+    }
+    if ($(this).hasClass("single")) {
       $(this).parents("tr").toggleClass("active");
       $(this)
         .parents("tbody")

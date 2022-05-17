@@ -125,3 +125,36 @@ select {
   top: 15px;
   right: 30px;
 }
+
+.msg_item {
+  cursor: pointer;
+  &.active {
+    background-color: $gray-200;
+  }
+  .latest_msg {
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.msg_detail {
+  width: 100%;
+  .dialog_area {
+  }
+
+  .texting_area {
+    background-color: #fff;
+    textarea {
+      border: none;
+      padding: 0;
+      resize: none;
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      margin-right: 5px;
+    }
+  }
+}

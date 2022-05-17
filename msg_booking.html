@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 會員管理 > 會員列表</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid msg">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-msg-b.png" />訊息中心
+            </h1>
+            <!-- 頁籤 -->
+            <div class="row">
+              <div class="col-12">
+                <div class="col-12 d-flex justify-content-start mb-4 pl-0 tab">
+                  <a
+                    class="text-gray-800 mr-3 pb-3 active"
+                    target="_self"
+                    href="msg_booking.html"
+                    >訂單訊息</a
+                  >
+                  <a
+                    class="text-gray-800 mr-3 pb-3 ml-3"
+                    target="_self"
+                    href="msg_line.html"
+                    >LINE OA 訊息</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- 對話框 -->
+            <div class="container table-bordered px-3 mb-5">
+              <div class="row" style="margin-left: -1rem; margin-right: -1rem">
+                <div
+                  class="col-5 py-3"
+                  style="border-right: 1px solid #e3e6f0; min-height: 500px"
+                >
+                  <div class="row mb-3">
+                    <div class="col-8">
+                      <input
+                        type="text"
+                        class="search"
+                        placeholder="搜尋訂單編號、會員姓名"
+                      />
+                    </div>
+                    <div class="col-4 pl-0">
+                      <select name="" id="">
+                        <option value="已讀訊息">已讀訊息</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row msg_item_list">
+                    <div class="msg_item col-12 pt-2">
+                      <div class="d-flex justify-content-between">
+                        <p class="name text-m mb-1">陳小美</p>
+                        <p class="time text-xs text-gray-600 mb-1">下午4:56</p>
+                      </div>
+                      <p class="text-gray-600 text-m latest_msg">
+                        哈囉，請問架上價錢是多少？?新會員是不是測測試測試
+                      </p>
+                    </div>
+                    <div class="msg_item col-12 pt-2 active">
+                      <div class="d-flex justify-content-between">
+                        <p class="name text-m mb-1">陳小美</p>
+                        <p class="time text-xs text-gray-600 mb-1">下午4:56</p>
+                      </div>
+                      <p class="text-gray-600 text-m latest_msg">
+                        哈囉，請問架上價錢是多少？?新會員是不是測測試測試
+                      </p>
+                    </div>
+                    <div class="msg_item col-12 pt-2">
+                      <div class="d-flex justify-content-between">
+                        <p class="name text-m mb-1">陳小美</p>
+                        <p class="time text-xs text-gray-600 mb-1">下午4:56</p>
+                      </div>
+                      <p class="text-gray-600 text-m latest_msg">
+                        哈囉，請問架上價錢是多少？?新會員是不是測測試測試
+                      </p>
+                    </div>
+                    <div class="msg_item col-12 pt-2">
+                      <div class="d-flex justify-content-between">
+                        <p class="name text-m mb-1">陳小美</p>
+                        <p class="time text-xs text-gray-600 mb-1">下午4:56</p>
+                      </div>
+                      <p class="text-gray-600 text-m latest_msg">
+                        哈囉，請問架上價錢是多少？?新會員是不是測測試測試
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-7 msg_detail px-0 d-flex flex-column justify-content-between text-m"
+                  style="background-color: rgba(176, 229, 244, 0.3)"
+                >
+                  <div class="dialog_area mx-3"></div>
+                  <div class="texting_area px-3 py-3">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="寫下回覆... (按Enter送出)"
+                    ></textarea>
+                    <div class="d-flex">
+                      <button>
+                        <img src="img/ico-file.png" alt="" width="16" />
+                      </button>
+                      <button>
+                        <img src="img/ico-pic.png" alt="" width="20" />
+                      </button>
+                      <button>
+                        <img src="img/ico-warning.png" alt="" width="21" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: true,
+      searching: false,
+      info: false,
+      select: false,
+      bLengthChange: false,
+      dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
+    });
+
+    $(".msg_item").on("click", function () {
+      $(".msg_item").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+</script>
