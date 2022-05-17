@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 商品設定 > 新增商品</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-product-b.png" />商品設定 &gt; 新增商品
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card py-4 pl-3 pr-3 mb-5 card-gray">
+                      <p class="h5 mb-3">商品類型 *</p>
+                      <select name="" id="pro_type">
+                        <option value="product_mall">周邊商城</option>
+                        <option value="product_online">線上服務</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="col-12 d-flex justify-content-start mb-4 pl-0 tab"
+                    >
+                      <a
+                        class="text-gray-800 mr-3 pb-3"
+                        href="product_mall.html"
+                        >商品資訊</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        href="product_price.html"
+                        >價格數量</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3 active"
+                        href="product_other.html"
+                        >其他設定</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <section>
+                  <!-- 商品價格 -->
+                  <p class="h5 mb-3">附加贈品</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="input-search">
+                        <input type="text" name="" placeholder="商品名稱" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 表格 -->
+                  <div class="row">
+                    <div class="col-12">
+                      <table class="dataTable no-footer">
+                        <thead>
+                          <tr>
+                            <th class="text-center" width="20">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id="all"
+                                class="all"
+                              />
+                            </th>
+                            <th
+                              class="text-center"
+                              width="80"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              商品類別
+                            </th>
+                            <th
+                              class="text-center"
+                              width="120"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              商品編號
+                            </th>
+                            <th class="text-center" rowspan="1" colspan="1">
+                              商品名稱
+                            </th>
+                            <th
+                              class="text-center"
+                              width="70"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              市價
+                            </th>
+                            <th
+                              class="text-center"
+                              width="70"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              優惠價
+                            </th>
+                            <th
+                              class="text-center"
+                              width="75"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              庫存數量
+                            </th>
+                            <th
+                              class="text-center"
+                              width="75"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              商品狀態
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              單次購買
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              IC CARE VIP
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              旺北脈搏血氧濃度計
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              百捷益自動退片多功能檢驗系統組合
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              星辰電子血壓計 CHUC515 (手臂式)
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" class="single" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員方案
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2022042200001
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              星辰額耳溫槍
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              2500
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              1800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              800
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              已上架
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 上架設定 -->
+                  <div class="row">
+                    <div class="col-12 d-flex mt-3 mb-5">
+                      <p class="h5 py-1 my-0 mr-2">上架設定</p>
+                      <p class="h6 py-2 my-0 mr-1">下架</p>
+                      <label class="switch my-0">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                      <p class="h6 py-2 my-0 ml-1">上架</p>
+                    </div>
+                  </div>
+                  <div class="row mb-5">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                      <button type="submit" class="btn btn-primary btn-block">
+                        儲存
+                      </button>
+                    </div>
+                    <div class="col-4"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: false,
+      searching: false,
+      info: false,
+    });
+  });
+</script>

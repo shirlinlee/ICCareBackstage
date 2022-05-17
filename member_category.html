@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 會員管理 > 會員分級 > 方案內容</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/icon-member-b.png" />會員管理 &gt; 會員分級 &gt;
+              方案內容
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <section>
+                  <!-- 會員分級名稱 -->
+                  <p class="h5 mb-3">會員分級名稱</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="中文名稱" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input type="text" name="" placeholder="英文名稱" />
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 會員有效期限 -->
+                  <p class="h5 mb-3">會員有效期限</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">永久會籍</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">設定有效期限</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <select name="" id="">
+                            <option value="請選擇有效月份">
+                              請選擇有效月份
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 消費折扣方案 -->
+                  <p class="h5 mb-3">消費折扣方案</p>
+                  <div class="row">
+                    <div class="col-12 d-flex mb-3">
+                      <a
+                        href="#"
+                        class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
+                      >
+                        <img src="img/ico-add.png" />
+                        <span class="text">新增</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <table class="dataTable no-footer">
+                        <thead>
+                          <tr>
+                            <th
+                              class="text-center col-4"
+                              width=""
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              產品分類
+                            </th>
+                            <th
+                              class="text-center col-6"
+                              width=""
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              折扣設定
+                            </th>
+                            <th
+                              class="text-center col-2"
+                              width=""
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              儲存設定
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <select name="" id="">
+                                <option value="請選產品分類">
+                                  請選產品分類
+                                </option>
+                              </select>
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="col-12 px-0 d-flex">
+                                <div class="col-4 pl-0">
+                                  <select name="" id="">
+                                    <option value="％">％</option>
+                                  </select>
+                                </div>
+                                <div class="col-8 px-0">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    placeholder="例: 8折請輸入80"
+                                  />
+                                </div>
+                              </div>
+                            </td>
+                            <td
+                              class="text-center text-gray-800 justify-content-center"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="d-flex justify-content-center">
+                                <a class="btn-table pl-3 pr-3 py-1">儲存</a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <select name="" id="">
+                                <option value="請選產品分類">
+                                  請選產品分類
+                                </option>
+                              </select>
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="col-12 px-0 d-flex">
+                                <div class="col-4 pl-0">
+                                  <select name="" id="">
+                                    <option value="％">％</option>
+                                  </select>
+                                </div>
+                                <div class="col-8 px-0">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    placeholder="例: 8折請輸入80"
+                                  />
+                                </div>
+                              </div>
+                            </td>
+                            <td
+                              class="text-center text-gray-800 justify-content-center"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="d-flex justify-content-center">
+                                <a class="btn-table pl-3 pr-3 py-1">儲存</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 子帳號數量限制 -->
+                  <p class="h5 mb-3">子帳號數量限制</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="請輸限制數量" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <a
+                        href="#"
+                        class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
+                      >
+                        <span class="text">儲存</span>
+                      </a>
+                      <a
+                        href="#"
+                        class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
+                      >
+                        <span class="text">名單查詢</span>
+                      </a>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 功能權限設定 -->
+                  <p class="h5 mb-3">功能權限設定</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="請輸入註冊驗證碼"
+                      />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <a
+                        href="#"
+                        class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
+                      >
+                        <span class="text">隨機代碼</span>
+                      </a>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 是否開啟消費集點功能 -->
+                  <div class="row">
+                    <div class="col-12 d-flex">
+                      <p class="h5 py-1 my-0 mr-2">是否開啟消費集點功能</p>
+                      <label class="switch my-0">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 是否開啟子帳號設定功能 -->
+                  <div class="row">
+                    <div class="col-12 d-flex">
+                      <p class="h5 py-1 my-0 mr-2">是否開啟子帳號設定功能</p>
+                      <label class="switch my-0">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <div class="row mb-5">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                      <button type="submit" class="btn btn-primary btn-block">
+                        儲存
+                      </button>
+                    </div>
+                    <div class="col-4"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- popup 方案適用名單-->
+    <div class="modal" tabindex="-1" style="display: block">
+      <!-- 把 style="display: block"拿掉 -->
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+      >
+        <div class="modal-content container-fluid">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
+              方案適用名單
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body px-0">
+            <!-- 按鈕，新增、移除-->
+            <div class="row mb-2">
+              <div class="col-12 d-flex">
+                <a
+                  href="#"
+                  class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
+                >
+                  <img src="img/ico-add.png" />
+                  <span class="text">新增成員</span>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
+                >
+                  <img src="img/icon-remove-w.png" />
+                  <span class="text">移除成員</span>
+                </a>
+              </div>
+            </div>
+            <!-- 列表 -->
+            <div class="row">
+              <div class="col-12">
+                <table class="dataTable no-footer">
+                  <thead>
+                    <tr>
+                      <th class="text-center" width="20">
+                        <input type="checkbox" name="" id="all" class="all" />
+                      </th>
+                      <th
+                        class="text-center"
+                        width="60"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        姓名
+                      </th>
+                      <th
+                        class="text-center"
+                        width="100"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        手機
+                      </th>
+                      <th
+                        class="text-center"
+                        width="70"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        訂單數量
+                      </th>
+                      <th
+                        class="text-center"
+                        width="70"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        累計消費
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="checkbox" name="" class="single" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        李筱方
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        +886-0911255875
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        505
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        NT$35000
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-3 mx-0"></div>
+            <div class="col-3 mx-0">
+              <button
+                type="button"
+                class="btn btn-primary-border btn-back btn-block"
+                data-dismiss="modal"
+              >
+                取消
+              </button>
+            </div>
+            <div class="col-3 mx-0">
+              <button type="button" class="btn btn-primary btn-block">
+                確認送出
+              </button>
+            </div>
+            <div class="col-3 mx-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup 黑背景-->
+    <div class="modal-backdrop fade show" style=""></div>
+    <!-- 把 fade 跟 show 兩個 class拿掉 -->
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: false,
+      searching: false,
+      info: false,
+    });
+  });
+</script>

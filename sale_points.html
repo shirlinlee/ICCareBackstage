@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>SB Admin 2 - 商品設定 > 新增商品</title>
+    <title>SB Admin 2 - 優惠設定</title>
 
     <!-- Custom fonts for this template-->
     <link
@@ -58,21 +58,11 @@
             <!-- Page Heading -->
 
             <h1 class="h3 mb-4 text-primary">
-              <img src="img/ico-product-b.png" />商品設定 &gt; 新增商品
+              <img src="img/ico-sale-b.png" />優惠設定 &gt; 消費集點設定
             </h1>
             <div class="row">
               <div class="col-12">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="card py-4 pl-3 pr-3 mb-5 card-gray">
-                      <p class="h5 mb-3">商品類型 *</p>
-                      <select name="" id="pro_type">
-                        <option value="product_mall">周邊商城</option>
-                        <option value="product_online">線上服務</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+                <!-- 頁籤 -->
                 <div class="row">
                   <div class="col-12">
                     <div
@@ -80,94 +70,108 @@
                     >
                       <a
                         class="text-gray-800 mr-3 pb-3"
-                        href="product_mall.html"
-                        >商品資訊</a
-                      >
-                      <a
-                        class="text-gray-800 mr-3 pb-3 ml-3 active"
-                        href="product_price.html"
-                        >價格數量</a
+                        target="_self"
+                        href="sale_discount.html"
+                        >滿額折扣設定</a
                       >
                       <a
                         class="text-gray-800 mr-3 pb-3 ml-3"
-                        href="product_other.html"
-                        >其他設定</a
+                        target="_self"
+                        href="sale_code.html"
+                        >折扣碼設定</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3 active"
+                        target="_self"
+                        href="sale_points.html"
+                        >消費集點設定</a
                       >
                     </div>
                   </div>
                 </div>
                 <section>
-                  <!-- 商品價格 -->
-                  <p class="h5 mb-3">商品價格</p>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <input type="text" name="" placeholder="市價*" />
-                    </div>
-                    <div class="col-6 pl-0">
-                      <input type="text" name="" placeholder="優惠價*" />
-                    </div>
-                  </div>
+                  <!-- 促銷活動名稱 -->
+                  <p class="h5 mb-3">促銷活動名稱 *</p>
                   <div class="row mb-3">
                     <div class="col-6">
                       <input
                         type="text"
                         name=""
-                        placeholder="紅利點數兌換(選填)"
+                        placeholder="中文名稱，夏日優惠：全店享九折"
+                      />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="英文名稱，summer special offer : 10% off  on your entire order"
                       />
                     </div>
                   </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 優惠概覽 -->
+                  <p class="h5 mb-3">優惠概覽 *</p>
                   <div class="row mb-3">
                     <div class="col-6">
-                      <input type="text" name="" placeholder="本島運費" />
-                    </div>
-                    <div class="col-6 pl-0">
-                      <input type="text" name="" placeholder="外離島運費" />
+                      <p class="h6">消費金額設定</p>
+                      <input type="text" name="" placeholder="消費金額設定" />
                     </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
-                  <!-- 商品數量 -->
-                  <p class="h5 mb-3">商品數量</p>
-                  <div class="row mb-2">
-                    <div class="col-6">
-                      <input type="checkbox" name="" id="unlimited_quantity" />
-                      <label for="unlimited_quantity">無限數量</label>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <input type="text" name="" placeholder="商品數量" />
-                    </div>
-                  </div>
-                  <hr class="sidebar-divider my-4" />
-                  <!-- 送貨方式 -->
-                  <p class="h5 mb-3">送貨方式</p>
+                  <!-- 請選擇會員等級 -->
+                  <p class="h5 mb-3">請選擇會員等級 *</p>
                   <div class="row mb-3">
                     <div class="col-6">
                       <select name="" id="">
-                        <option value="主分類">線上開通+郵件寄送</option>
+                        <option value="一般會員">一般會員</option>
                       </select>
                     </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
-                  <!-- 是否為線下人工交易 -->
-                  <div class="row">
-                    <div class="col-12 d-flex">
-                      <p class="h5 py-1 my-0 mr-2">是否為線下人工交易</p>
-                      <label class="switch my-0">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
+                  <!-- 點數兌換時間限制 -->
+                  <p class="h5 mb-3">點數兌換時間限制 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">無限制</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">設定有效期限</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <select name="" id="">
+                            <option value="請選擇有效月份">
+                              請選擇有效月份
+                            </option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
                   <div class="row mb-5">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                      <button type="submit" class="btn btn-primary btn-block">
-                        下一步
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                      <button
+                        type="submit"
+                        class="btn btn-primary-border btn-back btn-block"
+                      >
+                        取消
                       </button>
                     </div>
-                    <div class="col-4"></div>
+                    <div class="col-3">
+                      <button type="submit" class="btn btn-primary btn-block">
+                        確認送出
+                      </button>
+                    </div>
+                    <div class="col-3"></div>
                   </div>
                 </section>
               </div>
@@ -234,5 +238,24 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
   </body>
 </html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: true,
+      searching: false,
+      info: false,
+      select: false,
+      bLengthChange: false,
+      dom: '<"top"i>rt<"bottom"flp><"clear">',
+    });
+  });
+</script>
