@@ -107,11 +107,11 @@
                     </div>
                     <div class="col-4 pl-0">
                       <a
-                        href="#"
+                        href="product_mall.html"
                         class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon"
                       >
                         <img src="img/ico-add.png" />
-                        <span class="text">新增訂單</span>
+                        <span class="text">新增商品</span>
                       </a>
                     </div>
                   </div>
@@ -645,7 +645,6 @@
 </html>
 
 <script>
-  //隱藏 Table 排序icon
   $(function () {
     $(".dataTable").DataTable({
       ordering: false,
@@ -655,6 +654,12 @@
       select: false,
       bLengthChange: false,
       dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
     });
   });
 </script>
