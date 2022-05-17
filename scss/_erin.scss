@@ -94,6 +94,18 @@ button {
   background: $white;
   border: 1px solid $blue;
   color: $blue;
+  &::after {
+    background-image: url(../../../img/arrow-b-r.png);
+    content: "";
+    display: inline-block;
+    padding-left: 10px;
+    width: 20px;
+    height: 24px;
+    background-position: center top 4px;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    vertical-align: top;
+  }
   &.btn-back {
     &::before {
       background-image: url(../../../img/arrow-b-l.png);
@@ -102,9 +114,6 @@ button {
   &:hover {
     color: #28b9e0;
     border-color: #1fb4dc;
-  }
-  &::after {
-    display: none;
   }
 }
 
@@ -120,6 +129,9 @@ button {
     background-repeat: no-repeat;
     background-size: 8px;
     vertical-align: top;
+  }
+  &::after {
+    display: none;
   }
 }
 
@@ -156,6 +168,20 @@ button {
     width: 16px;
     margin-top: -3px;
     margin-left: 5px;
+  }
+}
+
+//純文字帶有icon
+.btn-text-icon {
+  img {
+    display: inline-block;
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+  color: $gray-800;
+  &:hover {
+    color: $gray-800;
   }
 }
 
@@ -324,4 +350,9 @@ tr {
   span {
     display: inline-block;
   }
+}
+
+.fixed-hiehgt-y {
+  height: 300px;
+  overflow-y: scroll;
 }
