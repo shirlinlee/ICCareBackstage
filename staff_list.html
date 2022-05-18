@@ -54,11 +54,11 @@
           <!-- End of Topbar -->
 
           <!-- Begin Page Content -->
-          <div class="container-fluid staff">
+          <div class="container-fluid staffpage">
             <!-- Page Heading -->
 
             <h1 class="h3 mb-4 text-primary">
-              <img src="img/icon-setting-b.png" />管理者設定
+              <img src="img/ico-setting-b.png" />管理者設定
             </h1>
             <div class="row">
               <div class="col-12">
@@ -67,7 +67,7 @@
                   <div class="row mb-3">
                     <div class="col-2">
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon btn_add"
                       >
                         <img src="img/ico-add.png" />
@@ -373,45 +373,6 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -448,7 +409,7 @@
     });
     $(".btn_add").on("click", function () {
       $("tbody").append(
-        '<tr> <td class="text-gray-800 pl-0" rowspan="1" colspan="1" > <div class="row mb-2"> <span class="col-3 pt-2">帳號</span> <input class="col-9" type="text" placeholder="請輸入帳號" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">密碼</span> <input class="col-9" type="text" placeholder="請輸入密碼" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">Email</span> <input class="col-9" type="text" placeholder="請輸入信箱" /> </div> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200 px-1" rowspan="1" colspan="1" > <a class="btn-table py-2 px-2 mb-2">儲存</a> <a class="btn-table py-2 px-2">刪除</a> </td></tr>'
+        '<tr> <td class="text-gray-800 pl-0" rowspan="1" colspan="1" > <div class="row mb-2"> <span class="col-3 pt-2">帳號</span> <input class="col-9" type="text" placeholder="請輸入帳號" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">密碼</span> <input class="col-9" type="text" placeholder="請輸入密碼" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">Email</span> <input class="col-9" type="text" placeholder="請輸入信箱" /> </div> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200 px-1" rowspan="1" colspan="1" > <a class="btn-table py-2 px-2 mb-2">儲存</a> <a class="btn-table py-2 px-2">刪除</a> </td></tr>',
       );
     });
   });

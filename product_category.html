@@ -63,8 +63,8 @@
             <div class="row">
               <div class="col-4 mb-3">
                 <a
-                  href="#"
-                  class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon"
+                  href="javascript:;"
+                  class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon btn_add"
                 >
                   <img src="img/ico-add.png" />
                   <span class="text">新增分類</span>
@@ -104,7 +104,7 @@
                   <tbody>
                     <tr>
                       <td
-                        class="text-center text-gray-800 align-top"
+                        class="text-center text-gray-800 align-top number"
                         rowspan="1"
                         colspan="1"
                       >
@@ -117,10 +117,20 @@
                       >
                         <div class="row d-flex">
                           <div class="col-6 pl-0 pr-2">
-                            <input type="text" name="" placeholder="中文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="中文名稱"
+                              class="cn"
+                            />
                           </div>
                           <div class="col-6 pl-2 pr-0">
-                            <input type="text" name="" placeholder="英文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="英文名稱"
+                              class="en"
+                            />
                           </div>
                         </div>
                       </td>
@@ -129,13 +139,16 @@
                         rowspan="1"
                         colspan="1"
                       >
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
                                 type="text"
                                 name=""
                                 placeholder="中文名稱1"
+                                class="cn"
                               />
                             </div>
                             <div class="col-6 pl-2 pr-0">
@@ -143,6 +156,7 @@
                                 type="text"
                                 name=""
                                 placeholder="英文名稱1"
+                                class="en"
                               />
                             </div>
                             <a class="btn-remove col-1"
@@ -150,12 +164,15 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
                                 type="text"
                                 name=""
+                                class="cn"
                                 placeholder="中文名稱2"
                               />
                             </div>
@@ -163,6 +180,7 @@
                               <input
                                 type="text"
                                 name=""
+                                class="en"
                                 placeholder="英文名稱2"
                               />
                             </div>
@@ -171,7 +189,7 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center">
+                        <div class="row d-flex align-items-center add-insert">
                           <a class="col-11 btn-gray-add"
                             >新增子分類<img src="img/ico-add-g.png"
                           /></a>
@@ -185,13 +203,15 @@
                       >
                         <div class="d-flex justify-content-center">
                           <a class="btn-table pl-3 pr-3 py-1 mr-3">儲存</a>
-                          <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                          <a class="btn-table pl-3 pr-3 py-1 btn-remove-all"
+                            >刪除</a
+                          >
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td
-                        class="text-center text-gray-800 align-top"
+                        class="text-center text-gray-800 align-top number"
                         rowspan="1"
                         colspan="1"
                       >
@@ -204,10 +224,20 @@
                       >
                         <div class="row d-flex">
                           <div class="col-6 pl-0 pr-2">
-                            <input type="text" name="" placeholder="中文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="中文名稱"
+                              class="cn"
+                            />
                           </div>
                           <div class="col-6 pl-2 pr-0">
-                            <input type="text" name="" placeholder="英文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="英文名稱"
+                              class="en"
+                            />
                           </div>
                         </div>
                       </td>
@@ -216,12 +246,15 @@
                         rowspan="1"
                         colspan="1"
                       >
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
                                 type="text"
                                 name=""
+                                class="cn"
                                 placeholder="中文名稱1"
                               />
                             </div>
@@ -229,6 +262,7 @@
                               <input
                                 type="text"
                                 name=""
+                                class="en"
                                 placeholder="英文名稱1"
                               />
                             </div>
@@ -237,12 +271,15 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
                                 type="text"
                                 name=""
+                                class="cn"
                                 placeholder="中文名稱2"
                               />
                             </div>
@@ -250,6 +287,7 @@
                               <input
                                 type="text"
                                 name=""
+                                class="en"
                                 placeholder="英文名稱2"
                               />
                             </div>
@@ -258,7 +296,32 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
+                          <div class="col-11 d-flex align-items-center px-0">
+                            <div class="col-6 pl-0 pr-2">
+                              <input
+                                type="text"
+                                name=""
+                                class="cn"
+                                placeholder="中文名稱3"
+                              />
+                            </div>
+                            <div class="col-6 pl-2 pr-0">
+                              <input
+                                type="text"
+                                name=""
+                                class="en"
+                                placeholder="英文名稱3"
+                              />
+                            </div>
+                            <a class="btn-remove col-1"
+                              ><img src="img/ico-x.png"
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="row d-flex align-items-center add-insert">
                           <a class="col-11 btn-gray-add"
                             >新增子分類<img src="img/ico-add-g.png"
                           /></a>
@@ -272,13 +335,15 @@
                       >
                         <div class="d-flex justify-content-center">
                           <a class="btn-table pl-3 pr-3 py-1 mr-3">儲存</a>
-                          <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                          <a class="btn-table pl-3 pr-3 py-1 btn-remove-all"
+                            >刪除</a
+                          >
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td
-                        class="text-center text-gray-800 align-top"
+                        class="text-center text-gray-800 align-top number"
                         rowspan="1"
                         colspan="1"
                       >
@@ -291,10 +356,20 @@
                       >
                         <div class="row d-flex">
                           <div class="col-6 pl-0 pr-2">
-                            <input type="text" name="" placeholder="中文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="中文名稱"
+                              class="cn"
+                            />
                           </div>
                           <div class="col-6 pl-2 pr-0">
-                            <input type="text" name="" placeholder="英文名稱" />
+                            <input
+                              type="text"
+                              name=""
+                              placeholder="英文名稱"
+                              class="en"
+                            />
                           </div>
                         </div>
                       </td>
@@ -303,7 +378,9 @@
                         rowspan="1"
                         colspan="1"
                       >
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
@@ -324,12 +401,15 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center mb-3">
+                        <div
+                          class="row d-flex align-items-center mb-3 sub_wrapper"
+                        >
                           <div class="col-11 d-flex align-items-center px-0">
                             <div class="col-6 pl-0 pr-2">
                               <input
                                 type="text"
                                 name=""
+                                class="cn"
                                 placeholder="中文名稱2"
                               />
                             </div>
@@ -337,6 +417,7 @@
                               <input
                                 type="text"
                                 name=""
+                                class="en"
                                 placeholder="英文名稱2"
                               />
                             </div>
@@ -345,7 +426,7 @@
                             /></a>
                           </div>
                         </div>
-                        <div class="row d-flex align-items-center">
+                        <div class="row d-flex align-items-center add-insert">
                           <a class="col-11 btn-gray-add"
                             >新增子分類<img src="img/ico-add-g.png"
                           /></a>
@@ -359,7 +440,9 @@
                       >
                         <div class="d-flex justify-content-center">
                           <a class="btn-table pl-3 pr-3 py-1 mr-3">儲存</a>
-                          <a class="btn-table pl-3 pr-3 py-1">刪除</a>
+                          <a class="btn-table pl-3 pr-3 py-1 btn-remove-all"
+                            >刪除</a
+                          >
                         </div>
                       </td>
                     </tr>
@@ -380,45 +463,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -447,6 +491,55 @@
       select: false,
       bLengthChange: false,
       dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
+    });
+
+    $("body").on("click", ".btn_add", function () {
+      var index = $("tbody").find("tr").length + 1;
+      $("tbody").append(
+        '<tr> <td class="text-center text-gray-800 align-top number" rowspan="1" colspan="1" >' +
+          index +
+          '</td> <td class="text-center text-gray-800 align-top" rowspan="1" colspan="1" > <div class="row d-flex"> <div class="col-6 pl-0 pr-2"> <input type="text" name="" placeholder="中文名稱" class="cn" /> </div> <div class="col-6 pl-2 pr-0"> <input type="text" name="" placeholder="英文名稱" class="en"/> </div> </div> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <div class="row d-flex align-items-center mb-3 sub_wrapper"> <div class="col-11 d-flex align-items-center px-0"> <div class="col-6 pl-0 pr-2"> <input type="text" name="" placeholder="中文名稱1" class="cn" /> </div> <div class="col-6 pl-2 pr-0"> <input type="text" name="" placeholder="英文名稱1" /> </div> <a class="btn-remove col-1" ><img src="img/ico-x.png" /></a> </div> </div> <div class="row d-flex align-items-center add-insert"> <a class="col-11 btn-gray-add" >新增子分類<img src="img/ico-add-g.png" /></a> <div class="col-1"></div> </div> </td> <td class="text-center text-gray-800 align-top" rowspan="1" colspan="1" > <div class="d-flex justify-content-center"> <a class="btn-table pl-3 pr-3 py-1 mr-3">儲存</a> <a class="btn-table pl-3 pr-3 py-1 btn-remove-all">刪除</a> </div> </td></tr>',
+      );
+    });
+
+    $("body").on("click", ".btn-gray-add", function () {
+      var $parent = $(this).parents(".add-insert");
+      var index = $(this).parents("td").find(".sub_wrapper").length + 1;
+      $parent.before(
+        '<div class="row d-flex align-items-center mb-3 sub_wrapper"> <div class="col-11 d-flex align-items-center px-0"> <div class="col-6 pl-0 pr-2"> <input type="text" name="" class="cn" placeholder="中文名稱' +
+          index +
+          '"> </div> <div class="col-6 pl-2 pr-0"> <input type="text" name="" class="en" placeholder="英文名稱' +
+          index +
+          '"> </div> <a class="btn-remove col-1"><img src="img/ico-x.png"></a> </div></div>',
+      );
+    });
+
+    $("body").on("click", ".btn-remove", function () {
+      var $parent = $(this).parents("td");
+      $(this).parents(".row.align-items-center").remove();
+      $parent.find(".sub_wrapper").each(function (index, el) {
+        $(el)
+          .find(".cn")
+          .attr("placeholder", `中文名稱${index + 1}`);
+        $(el)
+          .find(".en")
+          .attr("placeholder", `英文名稱${index + 1}`);
+      });
+    });
+
+    $("body").on("click", ".btn-remove-all", function () {
+      $(this).parents("tr").remove();
+      $("tbody>tr").each(function (index, el) {
+        $(el)
+          .find(".number")
+          .html(index + 1);
+      });
     });
   });
 </script>
