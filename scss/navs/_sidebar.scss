@@ -14,7 +14,12 @@
       text-align: center;
       padding: 0.75rem 1rem;
       width: $sidebar-collapsed-width;
-
+      img {
+        width: auto;
+        height: 16px;
+        margin-right: 3px;
+        margin-top: -3px;
+      }
       span {
         font-size: 0.65rem;
         display: block;
