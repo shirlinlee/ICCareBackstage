@@ -4,42 +4,43 @@
   const currentPage =
     window.location.pathname === "/" ? "/index" : window.location.pathname;
 
-  // Toggle the side navigation
-  $("body").on("click", "#sidebarToggle, #sidebarToggleTop", function (e) {
-    $("body").toggleClass("sidebar-toggled");
-    $(".sidebar").toggleClass("toggled");
-    if ($(".sidebar").hasClass("toggled")) {
-      $(".sidebar .collapse").collapse("hide");
-    }
-  });
-
   // init layout
   $("#accordionSidebar").load("layout/sidebar.html", function () {
     $(".nav-item").removeClass("active");
-    $("body")
-      .find(".nav-item")
+    $(".nav-item")
+      .find("a")
       .each(function () {
-        var navName = $(this).attr("data-nav");
+        var navName = $(this).attr("href").replace(".html", "");
         if (currentPage.indexOf(navName) > -1) {
           $(this).addClass("active");
         }
       });
-  });
-  $("#nav").load("layout/top_nav.html");
-
-  // Close any open menu accordions when window is resized below 768px
-  $(window).on("resize", function () {
-    if ($(window).width() < 768) {
-      $(".sidebar .collapse").collapse("hide");
-    }
-
-    // Toggle the side navigation when window is resized below 480px
-    if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
-      $("body").addClass("sidebar-toggled");
-      $(".sidebar").addClass("toggled");
-      $(".sidebar .collapse").collapse("hide");
+    if (window.innerWidth < 768) {
+      $(".collapse")
+        .removeClass("show")
+        .attr("data-parent", "#accordionSidebar");
     }
   });
+  $("#nav").load("layout/top_nav.html", function () {
+    $("body").on("click", "#sidebarToggleTop", function () {
+      $("body").toggleClass("sidebar-toggled");
+      $(".navbar-nav").toggleClass("toggled");
+    });
+  });
+
+  // // Close any open menu accordions when window is resized below 768px
+  // $(window).on("resize", function () {
+  //   if ($(window).width() < 768) {
+  //     $(".sidebar .collapse").collapse("hide");
+  //   }
+
+  //   // Toggle the side navigation when window is resized below 480px
+  //   if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
+  //     $("body").addClass("sidebar-toggled");
+  //     $(".sidebar").addClass("toggled");
+  //     $(".sidebar .collapse").collapse("hide");
+  //   }
+  // });
 
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $("body.fixed-nav .sidebar").on(
@@ -51,7 +52,7 @@
         this.scrollTop += (delta < 0 ? 1 : -1) * 30;
         e.preventDefault();
       }
-    }
+    },
   );
 
   // Scroll to top button appear
@@ -74,38 +75,43 @@
           scrollTop: $($anchor.attr("href")).offset().top,
         },
         1000,
-        "easeInOutExpo"
+        "easeInOutExpo",
       );
     e.preventDefault();
   });
 
-  $(".dataTable").on("click", 'input[type="checkbox"]', function () {
-    if ($(this).hasClass("all")) {
-      if ($(this).prop("checked")) {
-        console.log(1);
+  $("body").on(
+    "click",
+    '.dataTable input[type="checkbox"], .modalDataTable input[type="checkbox"]',
+    function () {
+      if ($(this).hasClass("all")) {
+        if ($(this).prop("checked")) {
+          console.log(1);
+          $(this)
+            .parents("thead")
+            .siblings("tbody")
+            .find("tr")
+            .addClass("active")
+            .find('input[type="checkbox"]')
+            .prop("checked", true);
+        } else {
+          $(this)
+            .parents("thead")
+            .siblings("tbody")
+            .find("tr")
+            .removeClass("active")
+            .find('input[type="checkbox"]')
+            .prop("checked", false);
+        }
+      }
+      if ($(this).hasClass("single")) {
+        $(this).parents("tr").toggleClass("active");
         $(this)
-          .parents("thead")
-          .siblings("tbody")
-          .find("tr")
-          .addClass("active")
-          .find('input[type="checkbox"]')
-          .prop("checked", true);
-      } else {
-        $(this)
-          .parents("thead")
-          .siblings("tbody")
-          .find("tr")
-          .removeClass("active")
+          .parents("tbody")
+          .siblings("thead")
           .find('input[type="checkbox"]')
           .prop("checked", false);
       }
-    } else {
-      $(this).parents("tr").toggleClass("active");
-      $(this)
-        .parents("tbody")
-        .siblings("thead")
-        .find('input[type="checkbox"]')
-        .prop("checked", false);
-    }
-  });
+    },
+  );
 })(jQuery); // End of use strict

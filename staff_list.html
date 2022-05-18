@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 會員管理 > 會員列表</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid staffpage">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-setting-b.png" />管理者設定
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <section>
+                  <!-- 篩選 -->
+                  <div class="row mb-3">
+                    <div class="col-2">
+                      <a
+                        href="javascript:;"
+                        class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon btn_add"
+                      >
+                        <img src="img/ico-add.png" />
+                        <span class="text">新增</span>
+                      </a>
+                    </div>
+                    <div class="col-10"></div>
+                  </div>
+                  <!-- 表格 -->
+                  <div class="row">
+                    <div class="col-12">
+                      <table class="dataTable no-footer text-m">
+                        <thead>
+                          <tr>
+                            <th class="text-center" rowspan="1" colspan="1">
+                              人員
+                            </th>
+                            <th
+                              class="text-center"
+                              width="80"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              管理者設定
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              訂單新增
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              訂單編輯
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              訂單編輯
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              商品編輯
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              商品刪除
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員新增
+                            </th>
+                            <th
+                              class="text-center"
+                              width="40"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              會員編輯
+                            </th>
+                            <th
+                              class="text-center"
+                              width="60"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              操作
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td
+                              class="text-gray-800 pl-0"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">帳號</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="Bard2022"
+                                />
+                              </div>
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">密碼</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="Intellicentrics89741"
+                                />
+                              </div>
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">Email</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="bard@intellicentrics.tw"
+                                />
+                              </div>
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200 px-1"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <a class="btn-table py-2 px-2 mb-2">儲存</a>
+                              <a class="btn-table py-2 px-2">刪除</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="text-gray-800 pl-0"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">帳號</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="Bard2022"
+                                />
+                              </div>
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">密碼</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="Intellicentrics89741"
+                                />
+                              </div>
+                              <div class="row mb-2">
+                                <span class="col-3 pt-2">Email</span>
+                                <input
+                                  class="col-9"
+                                  type="text"
+                                  value="bard@intellicentrics.tw"
+                                />
+                              </div>
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <input type="checkbox" name="" id="" />
+                            </td>
+                            <td
+                              class="text-center text-gray-800 bg-gray-200 px-1"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              <a class="btn-table py-2 px-2 mb-2">儲存</a>
+                              <a class="btn-table py-2 px-2">刪除</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: true,
+      searching: false,
+      info: false,
+      select: false,
+      bLengthChange: false,
+      dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
+    });
+    $(".btn_add").on("click", function () {
+      $("tbody").append(
+        '<tr> <td class="text-gray-800 pl-0" rowspan="1" colspan="1" > <div class="row mb-2"> <span class="col-3 pt-2">帳號</span> <input class="col-9" type="text" placeholder="請輸入帳號" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">密碼</span> <input class="col-9" type="text" placeholder="請輸入密碼" /> </div> <div class="row mb-2"> <span class="col-3 pt-2">Email</span> <input class="col-9" type="text" placeholder="請輸入信箱" /> </div> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800" rowspan="1" colspan="1" > <input type="checkbox" name="" id="" /> </td> <td class="text-center text-gray-800 bg-gray-200 px-1" rowspan="1" colspan="1" > <a class="btn-table py-2 px-2 mb-2">儲存</a> <a class="btn-table py-2 px-2">刪除</a> </td></tr>',
+      );
+    });
+  });
+</script>

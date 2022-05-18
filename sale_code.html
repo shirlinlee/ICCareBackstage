@@ -58,7 +58,7 @@
             <!-- Page Heading -->
 
             <h1 class="h3 mb-4 text-primary">
-              <img src="img/ico-sale-b.png" />優惠設定 &gt; 折扣碼設定
+              <img src="img/ico-sale-b.png" />優惠設定
             </h1>
             <div class="row">
               <div class="col-12">
@@ -71,7 +71,7 @@
                       <a
                         class="text-gray-800 mr-3 pb-3"
                         target="_self"
-                        href="sale_discount.html"
+                        href="sale_over.html"
                         >滿額折扣設定</a
                       >
                       <a
@@ -89,128 +89,197 @@
                     </div>
                   </div>
                 </div>
-                <section>
-                  <!-- 促銷活動名稱 -->
-                  <p class="h5 mb-3">促銷活動名稱 *</p>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <input
-                        type="text"
-                        name=""
-                        placeholder="中文名稱，夏日優惠：全店享九折"
-                      />
-                    </div>
-                    <div class="col-6 pl-0">
-                      <input
-                        type="text"
-                        name=""
-                        placeholder="英文名稱，summer special offer : 10% off  on your entire order"
-                      />
-                    </div>
-                  </div>
-                  <hr class="sidebar-divider my-4" />
-                  <!-- 折扣碼設定* -->
-                  <p class="h5 mb-3">折扣碼設定 *</p>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <input type="text" name="" placeholder="請輸入折扣代碼" />
-                    </div>
-                    <div class="col-6 pl-0">
+                <!-- 篩選 -->
+                <div class="row mb-3">
+                  <div class="col-6 d-flex pl-0">
+                    <div class="col-4">
                       <a
-                        href="#"
-                        class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-text"
+                        href="sale_code_setting.html"
+                        class="btn btn-primary pl-3 pr-3 mr-3 btn-primary-icon"
                       >
-                        <span class="text">隨機代碼</span>
+                        <img src="img/ico-add.png" />
+                        <span class="text">新增訂單</span>
                       </a>
                     </div>
                   </div>
-                  <hr class="sidebar-divider my-4" />
-                  <!-- 優惠概覽 -->
-                  <p class="h5 mb-3">優惠概覽 *</p>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <p class="h6">消費金額設定</p>
-                      <input type="text" name="" placeholder="消費金額設定" />
-                    </div>
-                    <div class="col-6 pl-0">
-                      <p class="h6">折扣金額設定</p>
-                      <div class="col-12 px-0 d-flex">
-                        <div class="col-4 pl-0">
-                          <select name="" id="">
-                            <option value="％">％</option>
-                          </select>
-                        </div>
-                        <div class="col-8 px-0">
-                          <input
-                            type="text"
-                            name=""
-                            placeholder="例: 8折請輸入80"
-                          />
-                        </div>
-                      </div>
-                    </div>
+                </div>
+                <!-- 表格 -->
+                <div class="row mb-5">
+                  <div class="col-12">
+                    <table class="dataTable no-footer">
+                      <thead>
+                        <tr>
+                          <th
+                            class="text-center"
+                            width="330"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            優惠名稱
+                          </th>
+                          <th
+                            class="text-center"
+                            width="100"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            適用會員
+                          </th>
+                          <th
+                            class="text-center"
+                            width="330"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            優惠時間
+                          </th>
+                          <th
+                            class="text-center"
+                            width="160"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            編輯 / 刪除
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care全館8折
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care VIP
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="text-center align-time">
+                              <span>2022/04/08</span>
+                              <span>-</span>
+                              <span>2022/05/13</span>
+                            </div>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="sale_code_setting.html"
+                                class="btn-table pl-3 pr-3 py-1 mr-3"
+                                >編輯</a
+                              >
+                              <a
+                                class="btn-table pl-3 pr-3 py-1 btn-remove-line"
+                                >刪除</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care全館8折
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care VIP
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="text-center align-time">
+                              <span>2022/04/08</span>
+                              <span>-</span>
+                              <span>2022/05/13</span>
+                            </div>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="sale_code_setting.html"
+                                class="btn-table pl-3 pr-3 py-1 mr-3"
+                                >編輯</a
+                              >
+                              <a
+                                class="btn-table pl-3 pr-3 py-1 btn-remove-line"
+                                >刪除</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care全館8折
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            IC Care VIP
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="text-center align-time">
+                              <span>2022/04/08</span>
+                              <span>-</span>
+                              <span>2022/05/13</span>
+                            </div>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <div class="d-flex justify-content-center">
+                              <a
+                                href="sale_code_setting.html"
+                                class="btn-table pl-3 pr-3 py-1 mr-3"
+                                >編輯</a
+                              >
+                              <a
+                                class="btn-table pl-3 pr-3 py-1 btn-remove-line"
+                                >刪除</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <hr class="sidebar-divider my-4" />
-                  <!-- 請選擇會員等級 -->
-                  <p class="h5 mb-3">請選擇會員等級 *</p>
-                  <div class="row mb-3">
-                    <div class="col-6">
-                      <select name="" id="">
-                        <option value="一般會員">一般會員</option>
-                      </select>
-                    </div>
-                  </div>
-                  <hr class="sidebar-divider my-4" />
-                  <!-- 促銷限制 -->
-                  <p class="h5 mb-3">促銷限制 *</p>
-                  <div class="row mb-3">
-                    <div class="col-6 d-flex align-items-end">
-                      <div class="col-4 pl-0 pr-0">
-                        <p class="h6">開始時間</p>
-                        <input type="date" name="" />
-                      </div>
-                      <div class="col-1 text-center pb-2">-</div>
-                      <div class="col-4 pl-0 pr-0">
-                        <p class="h6">結束時間</p>
-                        <input type="date" name="" />
-                      </div>
-                      <div class="col-3">
-                        <input type="checkbox" name="" class="" id="never" />
-                        <label for="never">永不過期</label>
-                      </div>
-                    </div>
-                    <div class="col-6 pl-0">
-                      <p class="h6">本優惠可使用的次數</p>
-                      <div class="row align-items-end">
-                        <div class="col-10">
-                          <input type="text" name="" placeholder="請輸入次數" />
-                        </div>
-                        <div class="col-2 pl-0">
-                          <input type="checkbox" name="" class="" id="never" />
-                          <label for="never">無限</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="sidebar-divider my-4" />
-                  <div class="row mb-5">
-                    <div class="col-3"></div>
-                    <div class="col-3">
-                      <button
-                        type="submit"
-                        class="btn btn-primary-border btn-back btn-block"
-                      >
-                        取消
-                      </button>
-                    </div>
-                    <div class="col-3">
-                      <button type="submit" class="btn btn-primary btn-block">
-                        確認送出
-                      </button>
-                    </div>
-                    <div class="col-3"></div>
-                  </div>
-                </section>
+                </div>
               </div>
             </div>
           </div>
@@ -226,45 +295,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -293,6 +323,15 @@
       select: false,
       bLengthChange: false,
       dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
+    });
+    $("body").on("click", ".btn-remove-line", function () {
+      $(this).parents("tr").remove();
     });
   });
 </script>

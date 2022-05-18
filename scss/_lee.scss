@@ -3,6 +3,7 @@
     width: 10px;
   }
 }
+
 .t-center {
   text-align: center;
 }
@@ -14,11 +15,13 @@
 table {
   width: 100%;
   line-height: 1.4;
+
   thead {
     tr {
       background-color: rgba(73, 196, 229, 0.3);
       border-radius: 5px;
       overflow: hidden;
+
       th,
       .th {
         padding: 6px 10px;
@@ -28,12 +31,15 @@ table {
 
   tbody {
     tr {
+
       td,
       .td {
         padding: 10px;
         border-bottom: solid 0.3px #959596;
       }
+
       &:last-child {
+
         td,
         .td {
           border-bottom: solid 1px #49c4e5;
@@ -62,6 +68,7 @@ textarea {
     height: 15px;
     vertical-align: middle;
     margin-bottom: 4px;
+
     &:checked {
       background-color: #49c4e5;
       border: solid 0.5px #49c4e5;
@@ -71,6 +78,7 @@ textarea {
       background-position: center;
     }
   }
+
   &:focus-visible {
     outline: none;
     border: solid 0.5px #49c4e5;
@@ -90,6 +98,7 @@ select {
   background-image: url(../img/ico-arrow-02.png);
   background-size: 10px;
   background-repeat: no-repeat;
+
   &:disabled {
     opacity: 1;
     background-color: #fafafa;
@@ -106,6 +115,7 @@ select {
 
 .dash-between {
   position: relative;
+
   &::after {
     content: "-";
     position: absolute;
@@ -124,4 +134,41 @@ select {
 .fa {
   top: 15px;
   right: 30px;
+}
+
+.msg_item {
+  cursor: pointer;
+
+  &.active {
+    background-color: $gray-200;
+  }
+
+  .latest_msg {
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.msg_detail {
+  width: 100%;
+
+  .dialog_area {}
+
+  .texting_area {
+    background-color: #fff;
+
+    textarea {
+      border: none;
+      padding: 0;
+      resize: none;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      margin-right: 5px;
+    }
+  }
 }

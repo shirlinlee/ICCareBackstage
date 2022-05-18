@@ -58,7 +58,7 @@
             <!-- Page Heading -->
 
             <h1 class="h3 mb-4 text-primary">
-              <img src="img/ico-sale-b.png" />優惠設定 &gt; 滿額折扣設定
+              <img src="img/ico-sale-b.png" />優惠設定 &gt; 消費集點設定
             </h1>
             <div class="row">
               <div class="col-12">
@@ -69,9 +69,9 @@
                       class="col-12 d-flex justify-content-start mb-4 pl-0 tab"
                     >
                       <a
-                        class="text-gray-800 mr-3 pb-3 active"
+                        class="text-gray-800 mr-3 pb-3"
                         target="_self"
-                        href="sale_discount.html"
+                        href="sale_over.html"
                         >滿額折扣設定</a
                       >
                       <a
@@ -81,7 +81,7 @@
                         >折扣碼設定</a
                       >
                       <a
-                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        class="text-gray-800 mr-3 pb-3 ml-3 active"
                         target="_self"
                         href="sale_points.html"
                         >消費集點設定</a
@@ -116,23 +116,6 @@
                       <p class="h6">消費金額設定</p>
                       <input type="text" name="" placeholder="消費金額設定" />
                     </div>
-                    <div class="col-6 pl-0">
-                      <p class="h6">折扣金額設定</p>
-                      <div class="col-12 px-0 d-flex">
-                        <div class="col-4 pl-0">
-                          <select name="" id="">
-                            <option value="％">％</option>
-                          </select>
-                        </div>
-                        <div class="col-8 px-0">
-                          <input
-                            type="text"
-                            name=""
-                            placeholder="例: 8折請輸入80"
-                          />
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
                   <!-- 請選擇會員等級 -->
@@ -145,33 +128,29 @@
                     </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
-                  <!-- 優惠概覽 -->
-                  <p class="h5 mb-3">優惠概覽 *</p>
+                  <!-- 點數兌換時間限制 -->
+                  <p class="h5 mb-3">點數兌換時間限制 *</p>
                   <div class="row mb-3">
-                    <div class="col-6 d-flex align-items-end">
-                      <div class="col-4 pl-0 pr-0">
-                        <p class="h6">開始時間</p>
-                        <input type="date" name="" />
-                      </div>
-                      <div class="col-1 text-center pb-2">-</div>
-                      <div class="col-4 pl-0 pr-0">
-                        <p class="h6">結束時間</p>
-                        <input type="date" name="" />
-                      </div>
-                      <div class="col-3">
-                        <input type="checkbox" name="" class="" id="never" />
-                        <label for="never">永不過期</label>
-                      </div>
-                    </div>
-                    <div class="col-6 pl-0">
-                      <p class="h6">本優惠可使用的次數</p>
-                      <div class="row align-items-end">
-                        <div class="col-10">
-                          <input type="text" name="" placeholder="請輸入次數" />
-                        </div>
-                        <div class="col-2 pl-0">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-12">
                           <input type="checkbox" name="" class="" id="never" />
-                          <label for="never">無限</label>
+                          <label for="never">無限制</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">設定有效期限</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <select name="" id="">
+                            <option value="請選擇有效月份">
+                              請選擇有效月份
+                            </option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -183,12 +162,17 @@
                       <button
                         type="submit"
                         class="btn btn-primary-border btn-back btn-block"
+                        onclick="window.location='sale_points.html'"
                       >
                         取消
                       </button>
                     </div>
                     <div class="col-3">
-                      <button type="submit" class="btn btn-primary btn-block">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-block"
+                        onclick="window.location='sale_points.html'"
+                      >
                         確認送出
                       </button>
                     </div>
@@ -211,45 +195,6 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -259,24 +204,5 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
   </body>
 </html>
-
-<script>
-  //隱藏 Table 排序icon
-  $(function () {
-    $(".dataTable").DataTable({
-      ordering: false,
-      paging: true,
-      searching: false,
-      info: false,
-      select: false,
-      bLengthChange: false,
-      dom: '<"top"i>rt<"bottom"flp><"clear">',
-    });
-  });
-</script>

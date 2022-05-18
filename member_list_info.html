@@ -191,9 +191,14 @@
                         <div class="col-6">
                           <div class="row">
                             <div class="col-6 pl-0">
-                              <a class="btn btn-primary btn-block">
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-block"
+                                data-toggle="modal"
+                                data-target="#recordModal"
+                              >
                                 紀錄查詢
-                              </a>
+                              </button>
                             </div>
                             <div class="col-6 pl-0">
                               <a class="btn btn-primary btn-block">
@@ -1331,45 +1336,6 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1385,14 +1351,23 @@
     <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- popup 健康諮詢紀錄-->
-    <div class="modal" tabindex="-1" style="display: block">
-      <!-- 把 style="display: block"拿掉 -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="recordModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="recordModalLabel"
+      aria-hidden="true"
+    >
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+        role="document"
       >
-        <div class="modal-content container-fluid">
+        <div class="modal-content container-fluid py-5">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
+            <h5 class="modal-title" id="recordModalCenteredScrollableTitle">
               陳大美 健康諮詢紀錄
             </h5>
             <button
@@ -1408,7 +1383,7 @@
             <!-- 列表 -->
             <div class="row">
               <div class="col-12">
-                <table class="dataTable no-footer">
+                <table class="modalDataTable no-footer">
                   <thead>
                     <tr>
                       <th
@@ -1417,7 +1392,7 @@
                         rowspan="1"
                         colspan="1"
                       >
-                      諮詢日期
+                        諮詢日期
                       </th>
                       <th
                         class="text-center"
@@ -1425,7 +1400,7 @@
                         rowspan="1"
                         colspan="1"
                       >
-                      諮詢時間
+                        諮詢時間
                       </th>
                       <th
                         class="text-center"
@@ -1433,7 +1408,7 @@
                         rowspan="1"
                         colspan="1"
                       >
-                      諮詢紀錄
+                        諮詢紀錄
                       </th>
                     </tr>
                   </thead>
@@ -1444,44 +1419,23 @@
                         rowspan="1"
                         colspan="1"
                       >
-                      20220418
+                        20220418
                       </td>
                       <td
                         class="text-center text-gray-800"
                         rowspan="1"
                         colspan="1"
                       >
-                      18:05
+                        18:05
                       </td>
                       <td
                         class="text-center text-gray-800"
                         rowspan="1"
                         colspan="1"
                       >
-                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        class="text-center text-gray-800"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                      20220413
-                      </td>
-                      <td
-                        class="text-center text-gray-800"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                      20:05
-                      </td>
-                      <td
-                        class="text-center text-gray-800"
-                        rowspan="1"
-                        colspan="1"
-                      >
-                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
+                        <a class="btn-text-icon"
+                          ><img src="img/ico-download.png" />下載</a
+                        >
                       </td>
                     </tr>
                     <tr>
@@ -1490,21 +1444,48 @@
                         rowspan="1"
                         colspan="1"
                       >
-                      20220928
+                        20220413
                       </td>
                       <td
                         class="text-center text-gray-800"
                         rowspan="1"
                         colspan="1"
                       >
-                      13:09
+                        20:05
                       </td>
                       <td
                         class="text-center text-gray-800"
                         rowspan="1"
                         colspan="1"
                       >
-                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
+                        <a class="btn-text-icon"
+                          ><img src="img/ico-download.png" />下載</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        20220928
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        13:09
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <a class="btn-text-icon"
+                          ><img src="img/ico-download.png" />下載</a
+                        >
                       </td>
                     </tr>
                   </tbody>
@@ -1515,21 +1496,31 @@
         </div>
       </div>
     </div>
-    <!-- popup 黑背景-->
-    <div class="modal-backdrop fade show" style=""></div>
-    <!-- 把 fade 跟 show 兩個 class拿掉 -->
-  </body>
   </body>
 </html>
 
 <script>
   //隱藏 Table 排序icon
   $(function () {
-    $(".dataTable").DataTable({
+    var table = $(".dataTable").DataTable({
       ordering: false,
       paging: false,
       searching: false,
       info: false,
+    });
+
+    var initModalDataTable = false;
+
+    $("#recordModal").on("show.bs.modal", function (event) {
+      if (!initModalDataTable) {
+        $(".modalDataTable").DataTable({
+          ordering: false,
+          paging: false,
+          searching: false,
+          info: false,
+        });
+        initModalDataTable = true;
+      }
     });
   });
 </script>

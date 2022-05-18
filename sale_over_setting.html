@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 優惠設定</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-sale-b.png" />優惠設定 &gt; 滿額折扣設定
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <!-- 頁籤 -->
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="col-12 d-flex justify-content-start mb-4 pl-0 tab"
+                    >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 active"
+                        target="_self"
+                        href="sale_over.html"
+                        >滿額折扣設定</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        target="_self"
+                        href="sale_code.html"
+                        >折扣碼設定</a
+                      >
+                      <a
+                        class="text-gray-800 mr-3 pb-3 ml-3"
+                        target="_self"
+                        href="sale_points.html"
+                        >消費集點設定</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <section>
+                  <!-- 促銷活動名稱 -->
+                  <p class="h5 mb-3">促銷活動名稱 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="中文名稱，夏日優惠：全店享九折"
+                      />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="英文名稱，summer special offer : 10% off  on your entire order"
+                      />
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 優惠概覽 -->
+                  <p class="h5 mb-3">優惠概覽 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <p class="h6">消費金額設定</p>
+                      <input type="text" name="" placeholder="消費金額設定" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <p class="h6">折扣金額設定</p>
+                      <div class="col-12 px-0 d-flex">
+                        <div class="col-4 pl-0">
+                          <select name="" id="">
+                            <option value="％">％</option>
+                          </select>
+                        </div>
+                        <div class="col-8 px-0">
+                          <input
+                            type="text"
+                            name=""
+                            placeholder="例: 8折請輸入80"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 請選擇會員等級 -->
+                  <p class="h5 mb-3">請選擇會員等級 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <select name="" id="">
+                        <option value="一般會員">一般會員</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <!-- 優惠概覽 -->
+                  <p class="h5 mb-3">優惠概覽 *</p>
+                  <div class="row mb-3">
+                    <div class="col-6 d-flex align-items-end">
+                      <div class="col-4 pl-0 pr-0">
+                        <p class="h6">開始時間</p>
+                        <input type="date" name="" />
+                      </div>
+                      <div class="col-1 text-center pb-2">-</div>
+                      <div class="col-4 pl-0 pr-0">
+                        <p class="h6">結束時間</p>
+                        <input type="date" name="" />
+                      </div>
+                      <div class="col-3">
+                        <input type="checkbox" name="" class="" id="never" />
+                        <label for="never">永不過期</label>
+                      </div>
+                    </div>
+                    <div class="col-6 pl-0">
+                      <p class="h6">本優惠可使用的次數</p>
+                      <div class="row align-items-end">
+                        <div class="col-10">
+                          <input type="text" name="" placeholder="請輸入次數" />
+                        </div>
+                        <div class="col-2 pl-0">
+                          <input type="checkbox" name="" class="" id="never" />
+                          <label for="never">無限</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider my-4" />
+                  <div class="row mb-5">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                      <button
+                        type="submit"
+                        class="btn btn-primary-border btn-back btn-block"
+                        onclick="window.location='sale_over.html'"
+                      >
+                        取消
+                      </button>
+                    </div>
+                    <div class="col-3">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-block"
+                        onclick="window.location='sale_over.html'"
+                      >
+                        確認送出
+                      </button>
+                    </div>
+                    <div class="col-3"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+  </body>
+</html>

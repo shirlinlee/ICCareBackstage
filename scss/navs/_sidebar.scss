@@ -15,30 +15,32 @@
       padding: 0.75rem 1rem;
       width: $sidebar-collapsed-width;
 
+      img {
+        width: auto;
+        height: 16px;
+        margin-right: 3px;
+        margin-top: -3px;
+      }
+
       span {
         font-size: 0.65rem;
         display: block;
       }
     }
 
-    &.active {
-      .nav-link {
-        font-weight: 700;
-      }
-    }
+
 
     // Accordion
     .collapse {
       position: absolute;
-      left: calc(#{$sidebar-collapsed-width} + #{$grid-gutter-width} / 2);
+      left: 6rem;
       z-index: 1;
       top: 2px;
       // Grow In Animation
       @extend .animated--grow-in;
 
       .collapse-inner {
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        background-color: $primary;
       }
     }
 
@@ -50,10 +52,9 @@
     .collapse,
     .collapsing {
       .collapse-inner {
-        padding: 0.5rem 0;
         min-width: 10rem;
         font-size: $dropdown-font-size;
-        margin: 0 0 1rem 0;
+        margin: 0;
 
         .collapse-header {
           margin: 0;
@@ -66,13 +67,21 @@
         }
 
         .collapse-item {
-          padding: 0.5rem 1rem;
-          margin: 0 0.5rem;
+          padding: 0.8rem 1rem 0.8rem 2rem;
+          margin: 0;
           display: block;
           color: $gray-900;
           text-decoration: none;
-          border-radius: $border-radius;
           white-space: nowrap;
+
+          @media screen and (max-width: 767px) {
+            padding-left: 1rem;
+          }
+
+          &:before {
+            content: "|";
+            padding-right: 10px;
+          }
 
           &:hover {
             font-weight: 700;
@@ -169,13 +178,16 @@
     margin-bottom: 1rem;
     padding: 1rem;
     background-color: fade-out($black, 0.9);
+
     .sidebar-card-illustration {
       height: 3rem;
       display: block;
     }
+
     .sidebar-card-title {
       font-weight: bold;
     }
+
     p {
       font-size: 0.75rem;
       color: fade-out($white, 0.5);
@@ -188,6 +200,7 @@
     width: $sidebar-base-width !important;
 
     .nav-item {
+
       // Accordion
       .collapse {
         position: relative;
@@ -209,15 +222,21 @@
 
       .collapse,
       .collapsing {
-        margin: 0 1rem;
+        // margin: 0 1rem;
       }
 
       .nav-link {
         display: block;
         width: 100%;
         text-align: left;
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 1.5rem;
         width: $sidebar-base-width;
+
+        &.active {
+          font-weight: 700;
+          color: #fff;
+          background-color: #28a9d7;
+        }
 
         i {
           font-size: 0.85rem;
@@ -268,6 +287,7 @@
       width: $sidebar-collapsed-width !important;
 
       .nav-item {
+
         // Accordion
         .collapse {
           position: absolute;
@@ -277,8 +297,8 @@
           // Grow In Animation for Toggled State
           animation-name: growIn;
           animation-duration: 200ms;
-          animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1),
-            opacity cubic-bezier(0, 1, 0.4, 1);
+          animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+
 
           .collapse-inner {
             box-shadow: $box-shadow;
@@ -407,8 +427,9 @@
   .sidebar-brand {
     color: $white;
     text-align: center;
+
     img {
-      width: 150px;
+      max-width: 150px;
       margin: 0 auto 10px;
     }
   }
@@ -429,11 +450,20 @@
         color: fade-out($white, 0.7);
       }
 
+      a {
+        &:hover {
+          color: $white;
+        }
+
+        &.active {
+          color: $white;
+          background-color: #28a9d7;
+        }
+      }
+
       &:active,
       &:focus,
       &:hover {
-        color: $white;
-
         i {
           color: $white;
         }
@@ -442,17 +472,6 @@
       // Accordion
       &[data-toggle="collapse"]::after {
         color: fade-out($white, 0.5);
-      }
-    }
-
-    &.active {
-      .nav-link {
-        color: $white;
-        background-color: #28a9d7;
-
-        i {
-          color: $white;
-        }
       }
     }
   }

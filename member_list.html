@@ -76,21 +76,21 @@
                     </div>
                     <div class="col-6 d-flex pl-0">
                       <a
-                        href="#"
+                        href="member_list_add.html"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
                       >
                         <img src="img/ico-add.png" />
                         <span class="text">新增會員</span>
                       </a>
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
                       >
                         <img src="img/icon-in-w.png" />
                         <span class="text">匯入會員</span>
                       </a>
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
                       >
                         <img src="img/icon-out-w.png" />
@@ -270,7 +270,11 @@
                               colspan="1"
                             >
                               <div class="d-flex justify-content-center">
-                                <a class="btn-table pl-3 pr-3 py-1">編輯</a>
+                                <a
+                                  class="btn-table pl-3 pr-3 py-1"
+                                  href="member_list_info.html"
+                                  >編輯</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -349,7 +353,11 @@
                               colspan="1"
                             >
                               <div class="d-flex justify-content-center">
-                                <a class="btn-table pl-3 pr-3 py-1">編輯</a>
+                                <a
+                                  class="btn-table pl-3 pr-3 py-1"
+                                  href="member_list_info.html"
+                                  >編輯</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -428,7 +436,11 @@
                               colspan="1"
                             >
                               <div class="d-flex justify-content-center">
-                                <a class="btn-table pl-3 pr-3 py-1">編輯</a>
+                                <a
+                                  class="btn-table pl-3 pr-3 py-1"
+                                  href="member_list_info.html"
+                                  >編輯</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -507,7 +519,11 @@
                               colspan="1"
                             >
                               <div class="d-flex justify-content-center">
-                                <a class="btn-table pl-3 pr-3 py-1">編輯</a>
+                                <a
+                                  class="btn-table pl-3 pr-3 py-1"
+                                  href="member_list_info.html"
+                                  >編輯</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -586,7 +602,11 @@
                               colspan="1"
                             >
                               <div class="d-flex justify-content-center">
-                                <a class="btn-table pl-3 pr-3 py-1">編輯</a>
+                                <a
+                                  class="btn-table pl-3 pr-3 py-1"
+                                  href="member_list_info.html"
+                                  >編輯</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -610,45 +630,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -677,6 +658,12 @@
       select: false,
       bLengthChange: false,
       dom: '<"top"i>rt<"bottom"flp><"clear">',
+      language: {
+        paginate: {
+          previous: "<",
+          next: ">",
+        },
+      },
     });
   });
 </script>

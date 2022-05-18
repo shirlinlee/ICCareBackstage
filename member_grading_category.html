@@ -107,7 +107,7 @@
                   <div class="row">
                     <div class="col-12 d-flex mb-3">
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
                       >
                         <img src="img/ico-add.png" />
@@ -244,17 +244,20 @@
                     </div>
                     <div class="col-6 pl-0">
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
                       >
                         <span class="text">儲存</span>
                       </a>
-                      <a
-                        href="#"
+
+                      <button
+                        type="button"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
+                        data-toggle="modal"
+                        data-target="#listModal"
                       >
-                        <span class="text">名單查詢</span>
-                      </a>
+                        名單查詢
+                      </button>
                     </div>
                   </div>
                   <hr class="sidebar-divider my-4" />
@@ -270,7 +273,7 @@
                     </div>
                     <div class="col-6 pl-0">
                       <a
-                        href="#"
+                        href="javascript:;"
                         class="btn btn-primary pl-3 pr-3 mr-2 btn-primary"
                       >
                         <span class="text">隨機代碼</span>
@@ -326,45 +329,6 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -380,12 +344,21 @@
     <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- popup 方案適用名單-->
-    <div class="modal" tabindex="-1" style="display: block">
-      <!-- 把 style="display: block"拿掉 -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="listModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="listModalLabel"
+      aria-hidden="true"
+    >
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+        role="document"
       >
-        <div class="modal-content container-fluid">
+        <div class="modal-content container-fluid py-5">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
               方案適用名單
@@ -404,15 +377,15 @@
             <div class="row mb-2">
               <div class="col-12 d-flex">
                 <a
-                  href="#"
+                  href="member_list_add.html"
                   class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
                 >
                   <img src="img/ico-add.png" />
                   <span class="text">新增成員</span>
                 </a>
                 <a
-                  href="#"
-                  class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon"
+                  href="javascript:;"
+                  class="btn btn-primary pl-3 pr-3 mr-2 btn-primary-icon remove-checked-item"
                 >
                   <img src="img/icon-remove-w.png" />
                   <span class="text">移除成員</span>
@@ -422,7 +395,7 @@
             <!-- 列表 -->
             <div class="row">
               <div class="col-12">
-                <table class="dataTable no-footer">
+                <table class="modalDataTable no-footer">
                   <thead>
                     <tr>
                       <th class="text-center" width="20">
@@ -739,7 +712,11 @@
               </button>
             </div>
             <div class="col-3 mx-0">
-              <button type="button" class="btn btn-primary btn-block">
+              <button
+                type="button"
+                class="btn btn-primary btn-block"
+                data-dismiss="modal"
+              >
                 確認送出
               </button>
             </div>
@@ -748,9 +725,6 @@
         </div>
       </div>
     </div>
-    <!-- popup 黑背景-->
-    <div class="modal-backdrop fade show" style=""></div>
-    <!-- 把 fade 跟 show 兩個 class拿掉 -->
   </body>
 </html>
 
@@ -762,6 +736,31 @@
       paging: false,
       searching: false,
       info: false,
+    });
+
+    var initModalDataTable = false;
+
+    $("#listModal").on("show.bs.modal", function (event) {
+      if (!initModalDataTable) {
+        $(".modalDataTable").DataTable({
+          ordering: false,
+          paging: false,
+          searching: false,
+          info: false,
+        });
+        initModalDataTable = true;
+      }
+    });
+
+    $("body").on("click", ".remove-checked-item", function () {
+      $(".modalDataTable")
+        .find("tr")
+        .each(function (index, el) {
+          if ($(el).find("input.single").prop("checked")) {
+            $(el).remove();
+          }
+          $(".all").prop("checked", false);
+        });
     });
   });
 </script>
