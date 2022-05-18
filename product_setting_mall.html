@@ -180,9 +180,9 @@
                     <div class="col-6">
                       <div class="textarea-tab">
                         <ul class="d-flex">
-                          <li class="active"><a>商品介紹</a></li>
-                          <li><a>規格說明</a></li>
-                          <li><a>售後服務</a></li>
+                          <li class="cn_li active"><a>商品介紹</a></li>
+                          <li class="cn_li"><a>規格說明</a></li>
+                          <li class="cn_li"><a>售後服務</a></li>
                         </ul>
                         <div class="textarea-tab-description"></div>
                       </div>
@@ -190,9 +190,9 @@
                     <div class="col-6">
                       <div class="textarea-tab">
                         <ul class="d-flex">
-                          <li><a>Description</a></li>
-                          <li class="active"><a>Specifications</a></li>
-                          <li><a>After Service</a></li>
+                          <li class="en_li active"><a>Description</a></li>
+                          <li class="en_li"><a>Specifications</a></li>
+                          <li class="en_li"><a>After Service</a></li>
                         </ul>
                         <div class="textarea-tab-description"></div>
                       </div>
@@ -265,6 +265,12 @@
     $("#pro_type").on("change", function (e) {
       var pageName = e.target.value;
       window.location.href = `${pageName}.html`;
+    });
+
+    $("body").on("click", ".cn_li, .en_li", function () {
+      var liName = $(this).hasClass("cn_li") ? "cn_li" : "en_li";
+      $(`.${liName}`).removeClass("active");
+      $(this).addClass("active");
     });
   });
 </script>
