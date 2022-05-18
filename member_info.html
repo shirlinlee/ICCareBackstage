@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - 會員管理 > 會員資料</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/icon-member-b.png" />會員管理 &gt; 會員資料
+            </h1>
+            <div class="row">
+              <div class="col-12">
+                <!-- 基本資訊 -->
+                <section>
+                  <p class="h5 mb-3">基本資訊</p>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="帳號" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input type="text" name="" placeholder="密碼" />
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="姓名" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <select name="" id="">
+                        <option value="性別">性別</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <p class="h6">生日</p>
+                      <input type="date" name="" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <p class="h6">手機號碼</p>
+                      <div class="d-flex">
+                        <div class="col-4 pl-0">
+                          <select name="" id="">
+                            <option value="886">886</option>
+                          </select>
+                        </div>
+                        <div class="col-8 pl-0 pr-0">
+                          <input
+                            type="tel"
+                            name=""
+                            placeholder="請輸入手機號碼"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="健保卡號" />
+                    </div>
+                    <div class="col-6 pl-0">
+                      <input type="text" name="" placeholder="電子信箱" />
+                    </div>
+                  </div>
+                  <div class="row mb-5">
+                    <div class="col-6">
+                      <input type="text" name="" placeholder="會員編號" />
+                    </div>
+                    <div class="col-6 pl-0 d-flex align-items-center">
+                      <div class="col-6 pl-0">
+                        <span>加入日期:</span>
+                        <span class="font-weight-bold">2022.06.06</span>
+                      </div>
+                      <div class="col-6 pl-0">
+                        <span>加入來源:</span>
+                        <span class="font-weight-bold">後台管理</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 按鈕 -->
+                  <div class="row mb-5">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                      <a class="btn btn-primary-border btn-block"> 編輯 </a>
+                    </div>
+                    <div class="col-3">
+                      <a class="btn btn-primary btn-block"> 儲存 </a>
+                    </div>
+                    <div class="col-3"></div>
+                  </div>
+                </section>
+                <hr class="sidebar-divider my-4" />
+                <section>
+                  <div class="row">
+                    <!-- 左邊欄位 -->
+                    <div class="col-6">
+                      <div class="row mb-4">
+                        <!-- 會員等級 -->
+                        <div class="col-6">
+                          <p class="h6">會員等級</p>
+                          <div class="row">
+                            <div class="col-7">
+                              <select name="" id="">
+                                <option value="請選擇等級">請選擇等級</option>
+                              </select>
+                            </div>
+                            <div class="col-5 pl-0">
+                              <a class="btn btn-primary btn-block"> 儲存 </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 會員狀態 -->
+                        <div class="col-6 pl-0">
+                          <p class="h6">會員狀態</p>
+                          <div class="row">
+                            <div class="col-7">
+                              <select name="" id="">
+                                <option value="請選擇狀態">請選擇狀態</option>
+                              </select>
+                            </div>
+                            <div class="col-5 pl-0">
+                              <a class="btn btn-primary btn-block"> 儲存 </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-4 align-items-end">
+                        <!-- 健康諮詢剩餘次數 -->
+                        <div class="col-6">
+                          <p class="h6">健康諮詢剩餘次數</p>
+                          <div class="row">
+                            <div class="col-7">
+                              <input type="text" name="" placeholder="" />
+                            </div>
+                            <div class="col-5 pl-0">
+                              <a class="btn btn-primary btn-block"> 儲存 </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-6 pl-0">
+                              <a class="btn btn-primary btn-block">
+                                紀錄查詢
+                              </a>
+                            </div>
+                            <div class="col-6 pl-0">
+                              <a class="btn btn-primary btn-block">
+                                健康檔案
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col-12">
+                          <p class="h6">子帳號設定</p>
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <p class="h5 py-1 my-0 mr-2">
+                                子帳號健康諮詢次數共享
+                              </p>
+                              <label class="switch my-0">
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 右邊欄位 -->
+                    <!-- 生效優惠 -->
+                    <div class="col-6 pl-0">
+                      <p class="h6">生效優惠</p>
+                      <div class="col-12 pl-0 pr-0 fixed-hiehgt-y">
+                        <table
+                          class="dataTable no-footer"
+                          id="DataTables_Table_0"
+                          role="grid"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                優惠方案
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                生效日期
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                剩餘次數/時間
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                永久
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                180天
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                永久
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                180天
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2次
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <hr class="sidebar-divider my-4" />
+                <!-- 會員訂單 -->
+                <section>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="h6">會員訂單</p>
+                      <div class="col-12 pl-0 pr-0 fixed-hiehgt-y">
+                        <table
+                          class="dataTable no-footer"
+                          id="DataTables_Table_0"
+                          role="grid"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單編號
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單日期
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單狀態
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                查閱訂單
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                未完成
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單金額
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                <a class="btn-table pl-3 pr-3 py-1">明細</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <hr class="sidebar-divider my-4" />
+                <!-- 紅利點數 -->
+                <section>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="h6">紅利點數</p>
+                      <div class="col-12 pl-0 pr-0 fixed-hiehgt-y">
+                        <table
+                          class="dataTable no-footer"
+                          id="DataTables_Table_0"
+                          role="grid"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                消費日期
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                訂單編號
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                消費金額
+                              </th>
+                              <th
+                                class="text-center sorting_disabled"
+                                width=""
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                獲得點數
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2022/5/25 14:30
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                202204270003
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                NT$2700
+                              </td>
+                              <td
+                                class="text-center text-gray-800"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                2
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p class="h6 text-right mt-4">總計 4 點</p>
+                    </div>
+                  </div>
+                </section>
+                <hr class="sidebar-divider my-4 mb-5" />
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- popup 健康諮詢紀錄-->
+    <div class="modal" tabindex="-1" style="display: block">
+      <!-- 把 style="display: block"拿掉 -->
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+      >
+        <div class="modal-content container-fluid">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">
+              陳大美 健康諮詢紀錄
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body px-0">
+            <!-- 列表 -->
+            <div class="row">
+              <div class="col-12">
+                <table class="dataTable no-footer">
+                  <thead>
+                    <tr>
+                      <th
+                        class="text-center"
+                        width="60"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      諮詢日期
+                      </th>
+                      <th
+                        class="text-center"
+                        width="100"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      諮詢時間
+                      </th>
+                      <th
+                        class="text-center"
+                        width="70"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      諮詢紀錄
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      20220418
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      18:05
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      20220413
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      20:05
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      20220928
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                      13:09
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <a class="btn-text-icon"><img src="img/ico-download.png">下載</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup 黑背景-->
+    <div class="modal-backdrop fade show" style=""></div>
+    <!-- 把 fade 跟 show 兩個 class拿掉 -->
+  </body>
+  </body>
+</html>
+
+<script>
+  //隱藏 Table 排序icon
+  $(function () {
+    $(".dataTable").DataTable({
+      ordering: false,
+      paging: false,
+      searching: false,
+      info: false,
+    });
+  });
+</script>
