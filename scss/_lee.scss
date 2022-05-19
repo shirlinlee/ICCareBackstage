@@ -47,6 +47,16 @@ table {
       }
     }
   }
+
+  &.height_fixed {
+    td {
+      min-height: 40px;
+    }
+  }
+
+  .number {
+    padding-top: 18px;
+  }
 }
 
 input,

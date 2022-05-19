@@ -10,6 +10,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="images/x-icon" />
+
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
@@ -24,7 +27,7 @@
     />
 
     <link
-      href="../vendor/datatables/dataTables.bootstrap4.min.css"
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
       rel="stylesheet"
     />
 
@@ -67,10 +70,11 @@
                 <section>
                   <p class="h5 mb-3">選取會員</p>
                   <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 input-search">
                       <input
                         type="text"
-                        class="search text-m"
+                        name=""
+                        class="text-m"
                         placeholder="輸入會員姓名或手機號碼進行搜尋"
                       />
                     </div>
@@ -145,10 +149,11 @@
                   <p class="h5 mb-3">選取商品</p>
                   <div class="content content1">
                     <div class="row">
-                      <div class="col-8">
+                      <div class="col-8 input-search">
                         <input
                           type="text"
-                          class="search text-m"
+                          name=""
+                          class="text-m"
                           placeholder="輸入商品名稱進行搜尋"
                         />
                       </div>
@@ -173,7 +178,7 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td class="text-center">
+                              <td class="text-center" style="height: 90px">
                                 <input type="checkbox" name="" class="single" />
                               </td>
                               <td class="text-center"></td>
@@ -474,8 +479,8 @@
     <script src="js/sb-admin-2.js"></script>
 
     <!-- Page level plugins -->
-    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
   </body>
 </html>
 
