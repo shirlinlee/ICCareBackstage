@@ -5110,6 +5110,10 @@ input[type="button"].btn-block {
   vertical-align: middle;
 }
 
+.lang {
+  width: 85px;
+}
+
 .lang select {
   border: none;
   background-color: transparent;

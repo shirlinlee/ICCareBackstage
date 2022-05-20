@@ -319,15 +319,15 @@ button {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: $blue;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px $blue;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
@@ -383,4 +383,17 @@ tr {
 .fixed-hiehgt-y {
   height: 300px;
   overflow-y: scroll;
+}
+
+.middle-divider {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mx-07 {
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+.w50-m {
+  max-width: calc(50% - 0.75rem);
 }
