@@ -164,7 +164,11 @@ select {
 .msg_detail {
   width: 100%;
 
-  .dialog_area {}
+  .dialog_area {
+    max-height: 320px;
+    overflow-y: scroll;
+
+  }
 
   .texting_area {
     background-color: #fff;
