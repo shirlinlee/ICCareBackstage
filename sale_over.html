@@ -284,6 +284,60 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                查看名單
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content pb-5">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <table class="modal-body text-center">
+                      <thead>
+                        <tr>
+                          <th width="20%">會員帳號</th>
+                          <th width="20%">會員姓名</th>
+                          <th width="20%">VIP到期日</th>
+                          <th width="20%">諮詢次數到期日</th>
+                          <th width="20%">停用</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Arthur1</td>
+                          <td>江志峰</td>
+                          <td>2023/5/8</td>
+                          <td class="col-3">2023/5/8</td>
+                          <td><button class="btn btn-primary">確定</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- /.container-fluid -->
@@ -293,6 +347,44 @@
       <!-- End of Content Wrapper -->
     </div>
     <!-- End of Page Wrapper -->
+
+    <!-- <div
+      class="modal fade modal-lg"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div>會員帳號</div>
+            <div class="col-2">會員姓名</div>
+            <div class="col-3">VIP到期日</div>
+            <div class="col-3">諮詢次數到期日</div>
+            <div class="col-2">停用</div>
+          </div>
+          <div class="row">
+            <div class="col-2">Arthur1</div>
+            <div class="col-2">江志峰</div>
+            <div class="col-3">2023/5/8</div>
+            <div class="col-3">2023/5/8</div>
+            <div class="col-2"><button>確定</button></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
