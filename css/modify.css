@@ -477,4 +477,17 @@ tr.status-understock td {
 .fixed-hiehgt-y {
   height: 300px;
   overflow-y: scroll;
+}
+
+.middle-divider {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mx-07 {
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+.w50-m {
+  max-width: calc(50% - 0.75rem);
 }/*# sourceMappingURL=modify.css.map */
