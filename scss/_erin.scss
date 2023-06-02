@@ -1,5 +1,5 @@
 $gary-input: #959596;
-
+@import "./variables";
 //--------------------------------------------------------------------標題區
 //帶有icon的頁面標題
 h1 {
@@ -319,15 +319,15 @@ button {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: $blue;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px $blue;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
