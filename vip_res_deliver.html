@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="images/x-icon" />
+
+    <title>SB Admin 2 - 優惠設定</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+    <link href="css/modify.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      ></ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            id="nav"
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+          ></nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid product">
+            <!-- Page Heading -->
+
+            <h1 class="h3 mb-4 text-primary">
+              <img src="img/ico-vip-b.png" />VIP專人服務 > 表單回應
+            </h1>
+
+            <!-- 頁籤 -->
+            <div class="row">
+              <div class="col-12">
+                <div class="col-12 d-flex justify-content-start mb-4 pl-0 tab">
+                  <a
+                    class="text-gray-800 mr-3 pb-3"
+                    target="_self"
+                    href="vip_res_special.html"
+                    >特色門診</a
+                  >
+                  <a
+                    class="text-gray-800 mr-3 pb-3 ml-3"
+                    target="_self"
+                    href="vip_res_consult.html"
+                    >藥品諮詢</a
+                  >
+                  <a
+                    class="text-gray-800 mr-3 pb-3 ml-3 active"
+                    target="_self"
+                    href="vip_res_deliver.html"
+                    >藥物配送</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <!-- 表格 -->
+                <div class="row mb-5">
+                  <div class="col-12">
+                    <table class="dataTable no-footer">
+                      <thead>
+                        <tr>
+                          <th
+                            class="text-center"
+                            width="14%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            表單編號
+                          </th>
+                          <th
+                            class="text-center"
+                            width="14%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            表單日期
+                          </th>
+                          <th
+                            class="text-center"
+                            width="14%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            表單類型
+                          </th>
+                          <th
+                            class="text-center"
+                            width="13%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            表單內容
+                          </th>
+                          <th
+                            class="text-center"
+                            width="13%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            回應編輯
+                          </th>
+                          <th
+                            class="text-center"
+                            width="13%"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            付款設定
+                          </th>
+                          <th class="text-center" rowspan="1" colspan="1">
+                            處理狀態
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            A20230507
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            2023/5/7 14:00
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            特色門診
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              查閱
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              回覆
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button
+                              type="button"
+                              class="btn-table pl-3 pr-3 py-1"
+                              data-toggle="modal"
+                              data-target="#editModal"
+                            >
+                              編輯
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <select
+                              name=""
+                              id=""
+                              class="mr-2 py-1"
+                              style="width: calc(100% - 79px)"
+                            >
+                              <option value=""></option>
+                              <option value="已處理">已處理</option>
+                              <option value="未處理">未處理</option>
+                            </select>
+                            <button
+                              href="vip_setting_clinic.html"
+                              class="btn-table pl-3 pr-3 py-1"
+                            >
+                              儲存
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            A20230507
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            2023/5/7 14:00
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            藥品諮詢
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              查閱
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              回覆
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button
+                              type="button"
+                              class="btn-table pl-3 pr-3 py-1"
+                              data-toggle="modal"
+                              data-target="#editModal"
+                            >
+                              編輯
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <select
+                              name=""
+                              id=""
+                              class="mr-2 py-1"
+                              style="width: calc(100% - 79px)"
+                            >
+                              <option value=""></option>
+                              <option value="已處理">已處理</option>
+                              <option value="未處理">未處理</option>
+                            </select>
+                            <button
+                              href="vip_setting_clinic.html"
+                              class="btn-table pl-3 pr-3 py-1"
+                            >
+                              儲存
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            A20230507
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            2023/5/7 14:00
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            藥物配送
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              查閱
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button class="btn-table pl-3 pr-3 py-1">
+                              回覆
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <button
+                              type="button"
+                              class="btn-table pl-3 pr-3 py-1"
+                              data-toggle="modal"
+                              data-target="#editModal"
+                            >
+                              編輯
+                            </button>
+                          </td>
+                          <td
+                            class="text-center text-gray-800"
+                            rowspan="1"
+                            colspan="1"
+                          >
+                            <select
+                              name=""
+                              id=""
+                              class="mr-2 py-1"
+                              style="width: calc(100% - 79px)"
+                            >
+                              <option value=""></option>
+                              <option value="已處理">已處理</option>
+                              <option value="未處理">未處理</option>
+                            </select>
+                            <button
+                              href="vip_setting_clinic.html"
+                              class="btn-table pl-3 pr-3 py-1"
+                            >
+                              儲存
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        role="document"
+      >
+        <div class="modal-content container-fluid py-5">
+          <div class="modal-header" style="border-bottom: none">
+            <h5 class="modal-title" id="editModalCenteredScrollableTitle">
+              付款設定
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body py-0">
+            <!-- 列表 -->
+            <div class="row">
+              <div class="col-12">
+                <table class="modalDataTable no-footer no-border">
+                  <tbody>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                        width="60"
+                      >
+                        1.
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="text" name="" placeholder="項目名稱" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="金額（新台幣）"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                        width="60"
+                      >
+                        2.
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="text" name="" placeholder="項目名稱" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="金額（新台幣）"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                        width="60"
+                      >
+                        3.
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input type="text" name="" placeholder="項目名稱" />
+                      </td>
+                      <td
+                        class="text-center text-gray-800"
+                        rowspan="1"
+                        colspan="1"
+                      >
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="金額（新台幣）"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="row my-5">
+              <div class="col-3"></div>
+              <div class="col-3">
+                <button
+                  type="submit"
+                  class="btn btn-primary-border btn-back btn-block"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  取消
+                </button>
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-primary btn-block">
+                  確認送出
+                </button>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>

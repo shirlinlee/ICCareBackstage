@@ -1,3 +1,5 @@
+@import "./variables";
+
 .staff {
   img {
     width: 10px;
@@ -31,15 +33,13 @@ table {
 
   tbody {
     tr {
-
       td,
       .td {
         padding: 10px;
-        border-bottom: solid 0.3px #959596;
+        border-bottom: solid 0.3px #aeaeae;
       }
 
       &:last-child {
-
         td,
         .td {
           border-bottom: solid 1px #49c4e5;
@@ -73,7 +73,8 @@ textarea {
     color: $gray-500;
   }
 
-  &[type="checkbox"] {
+  &[type="checkbox"],
+  &[type="radio"] {
     width: 15px;
     height: 15px;
     vertical-align: middle;
@@ -164,7 +165,10 @@ select {
 .msg_detail {
   width: 100%;
 
-  .dialog_area {}
+  .dialog_area {
+    max-height: 320px;
+    overflow-y: scroll;
+  }
 
   .texting_area {
     background-color: #fff;
@@ -179,6 +183,14 @@ select {
       border: none;
       background-color: transparent;
       margin-right: 5px;
+    }
+  }
+}
+
+.no-border {
+  tr {
+    td {
+      border-bottom: none !important;
     }
   }
 }
