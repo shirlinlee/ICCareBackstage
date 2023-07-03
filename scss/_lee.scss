@@ -1,5 +1,9 @@
 @import "./variables";
 
+.poR {
+  position: relative;
+}
+
 .staff {
   img {
     width: 10px;
@@ -193,4 +197,23 @@ select {
       border-bottom: none !important;
     }
   }
+}
+
+.notify {
+  background-color: #49c4e5;
+  color: #fff !important;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  font-size: 12px !important;
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
 }
