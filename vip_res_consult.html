@@ -189,7 +189,9 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            <button class="btn-table pl-3 pr-3 py-1">
+                            <button
+                              class="btn-table pl-3 pr-3 py-1 service_msg"
+                            >
                               回覆
                             </button>
                           </td>
@@ -266,7 +268,9 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            <button class="btn-table pl-3 pr-3 py-1">
+                            <button
+                              class="btn-table pl-3 pr-3 py-1 service_msg"
+                            >
                               回覆
                             </button>
                           </td>
@@ -343,7 +347,9 @@
                             rowspan="1"
                             colspan="1"
                           >
-                            <button class="btn-table pl-3 pr-3 py-1">
+                            <button
+                              class="btn-table pl-3 pr-3 py-1 service_msg"
+                            >
                               回覆
                             </button>
                           </td>
@@ -545,6 +551,49 @@
       </div>
     </div>
 
+    <div class="lb service_lb">
+      <div class="lb_content W1060">
+        <div class="t_center"><h4 class="title">客服回應</h4></div>
+        <label class="close close_lb">
+          <span class="hamburger hamburger-1"></span>
+          <span class="hamburger hamburger-2"></span>
+          <span class="hamburger hamburger-3"></span>
+        </label>
+        <div class="online_service">
+          <p class="f18 f_grey">IC CARE客服人員001</p>
+          <div class="conversation">
+            <div class="service">
+              <div class="bg">
+                <p>
+                  IC
+                  CARE是一家通過集成式端到端技術平臺，為北美、英國和亞太地區使用者提供服務的醫療保健技術平臺公司，以創新解決方案，提供可信賴的醫療保健體驗服務。
+                </p>
+                <span>2023.07.05 16:57</span>
+              </div>
+            </div>
+            <div class="user">
+              <div class="bg">
+                <p>家庭群組健康數據共享?</p>
+                <span>2023.07.05 16:59</span>
+              </div>
+            </div>
+          </div>
+          <div class="text_area d_flex">
+            <textarea
+              name=""
+              id="online_textarea"
+              rows="1"
+              placeholder="輸入文字"
+              class="blank"
+            ></textarea>
+            <a href="javascript:;" class="send"
+              ><img src="images/ic-send.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
@@ -563,5 +612,16 @@
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $(function () {
+        $("body").on("click", ".close", function () {
+          $(".lb").removeClass("open");
+        });
+
+        $("body").on("click", ".service_msg", function () {
+          $(".service_lb").addClass("open");
+        });
+      });
+    </script>
   </body>
 </html>
